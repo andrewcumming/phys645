@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Introductory notes
+    chapters:
+    - file: overview
+    - file: radiation_notes
+    - file: accretion_notes
+  - caption: Exercises
+    chapters:
+    - file: exercise1
+    - file: exercise2
+    - file: accretion_questions
+    - file: exercise3
+    - file: exercise4
+    - file: binaries
+    - file: exercise5
+    - file: exercise6
+    - file: compact
+    - file: exercise7
+    - file: exercise8
+    - file: exercise9
+  - caption: Solutions
+    chapters:
+    - file: accretion_sols
+    - file: binary_sols
+    - file: bhrt
+    - file: powerlaw
+
