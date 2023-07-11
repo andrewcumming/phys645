@@ -12,7 +12,11 @@ $$
 
 Here $M(A,Z)$ is the mass of the nucleus with mass $A$ and charge $Z$. This is a physically-motivated empirical formula that is fit to nuclear data to determine the best fit constants $a_V\approx 15.8\ {\rm MeV}$, $a_S\approx 17.8\ {\rm MeV}$, $a_C\approx 0.711\ {\rm MeV}$, and $a_A\approx 23.7\ {\rm MeV}$. The proton and neutron masses are $m_p \approx  938.272\ {\rm MeV}$ and $m_n \approx 939.565\ {\rm MeV}$.  
 
-(a) The four terms on the right hand side are the volume, surface, Coulomb, and asymmetry terms\footnote{A pairing term is also often added to this formula which favors nuclei with even numbers of neutrons and protons, but we ignore that here.}. Can you tell from the scalings with $Z$ and $A$ and the signs of the different terms why they have these names?
+(a) The four terms on the right hand side are the volume, surface, Coulomb, and asymmetry terms. Can you tell from the scalings with $Z$ and $A$ and the signs of the different terms why they have these names?
+
+```{note}
+A pairing term is also often added to the semi-empirical mass formula to account for the increased binding energy of nuclei with even numbers of neutrons or protons. We ignore that here for simplicity and to make the behaviour with $A$ and $Z$ continuous.
+```
 
 (b) Plot a color map of the binding energy per nucleon ($E_B/A$) as a function of $N$ on the $x$-axis and $Z$ on the $y$-axis. You should see the "stability valley", the nuclei that have the largest binding energies for each element ($Z$). How does $N$ scale with $Z$ for these most stable nuclei? Does it look as you expect? Do you recognize some of the nuclei in the stability valley? It might be helpful to add the curve showing the $N$ that maximizes the binding energy as a function of $Z$.
 
@@ -22,7 +26,7 @@ $$
 {S_n(A,Z)\over c^2} =   m_n + M(A-1,Z) - M(A,Z) = E_B(A,Z) - E_B(A-1,Z).
 $$
 
-If $S_n<0$, the nucleus will spontaneously spit out a neutron, it is neutron unbound. Plot a color map of $S_n$ and identify the {\bf neutron drip line}, the boundary between nuclei that are neutron bound and unbound. 
+If $S_n<0$, the nucleus will spontaneously spit out a neutron, it is neutron unbound. Plot a color map of $S_n$ and identify the **neutron drip line**, the boundary between nuclei that are neutron bound and unbound. 
 
 (d) In a neutron star, the electrons are degenerate with energy $E_F$, so the energy we need to consider for a given nucleus is actually 
 
@@ -40,7 +44,7 @@ where $Y_e=n_em_p/\rho = Z/A$ for a single species of nucleus.
 
 Because electrons have a large Fermi energy, they can capture onto nuclei changing the $Z$. Therefore, the $Z$ can adjust (at fixed $A$) to lower the energy.
 
-For example, consider a nucleus with $A=56$. Find the $Z$ that minimizes the energy for that nucleus as a function of density (you can try a range of densities from $\rho = 10^8$--$10^{12}\ {\rm g\ cm^{-3}}$). Do you get the answer you expect at low density? What happens at higher densities? Check to see whether these nuclei are neutron-unbound. You should find that there is a density where neutrons start to spontaneously be released from the nuclei -- {\bf neutron drip}. 
+For example, consider a nucleus with $A=56$. Find the $Z$ that minimizes the energy for that nucleus as a function of density (you can try a range of densities from $\rho = 10^8$--$10^{12}\ {\rm g\ cm^{-3}}$). Do you get the answer you expect at low density? What happens at higher densities? Check to see whether these nuclei are neutron-unbound. You should find that there is a density where neutrons start to spontaneously be released from the nuclei -- **neutron drip**. 
 
 (e) How deep into the star is neutron drip? You can estimate this using the pressure scale height $P/\rho g$ at that depth. 
 
@@ -58,7 +62,7 @@ $$
 
 where $a$ is the mean separation between ions given by $(4\pi/3) n_i a^3 =1$ and $n_i = \rho/Am_p$ is the ion density. At temperatures that are low enough that $\Gamma$ becomes large, the thermal energy is negligible and then the Coulomb repulsion between ions makes the ions fall into a lattice -- the plasma forms a solid. At higher temperatures, thermal motions of the ions become significant, $\Gamma$ drops, and the ions are able to move around, becoming liquid for $\Gamma<\Gamma_{\rm melt}$ and finally gas for $\Gamma<1$. 
 
-(a) Imagine perturbing one of the ions from its equilibrium position in the lattice by an amount $\delta r\ll a$. Estimate the restoring force it will feel from the Coulomb repulsion of it's nearest neighbours, and therefore the spring constant. Next, assuming thermal equilibrium so that degrees of freedom get $(1/2)k_BT$ of energy, estimate the mean-square displacement of the ion about its equilibrium position as a function of temperature.
+(a) Imagine perturbing one of the ions from its equilibrium position in the lattice by an amount $\delta r\ll a$. Estimate the restoring force it will feel from the Coulomb repulsion of its nearest neighbours, and therefore the spring constant. Next, assuming thermal equilibrium so that degrees of freedom get $(1/2)k_BT$ of energy, estimate the mean-square displacement of the ion about its equilibrium position as a function of temperature.
 
 (b) {\em Lindemann's criterion} is an [empircal rule](https://en.wikipedia.org/wiki/Melting_point#Predicting_the_melting_point_of_substances_(Lindemann's_criterion)) for when a solid melts which is that the solid will melt when $\langle (\delta r)^2\rangle\sim c^2a^2$ with $c\approx 0.15$--$0.3$. Use this to estimate the value of $\Gamma_m$. Molecular dynamics simulations of these kinds of plasmas give $\Gamma_m\approx 175$. How does your answer compare? 
 

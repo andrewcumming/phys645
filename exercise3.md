@@ -19,7 +19,13 @@ Assume that (1) the flow is optically thin and (2) that cooling is negligible so
 A black hole accretes from surrounding gas with density $\rho_\infty$ and sound speed $c_\infty$ at a rate given by the Bondi rate $\dot M = \pi (GM)^2 \rho_\infty/c_\infty^3$. Assume the flow is adiabatic ($T\propto \rho^{2/3}$). Investigate whether Coulomb collisions can effectively couple electrons and protons in the flow.
 
 The following results will be useful:
-* The collision rate between electrons and protons is $n\sigma v_e=1/t_\mathrm{coll}$, where $n$ is the proton density, $v_e$ is the electron velocity, and $\sigma$ is the Coulomb cross-section, roughly given by  $$\sigma\approx {e^4\over (k_BT)^2}$$ (there is a Coulomb logarithm which I've set to 1 here). 
+* The collision rate between electrons and protons is $n\sigma v_e=1/t_\mathrm{coll}$, where $n$ is the proton density, $v_e$ is the electron velocity, and $\sigma$ is the Coulomb cross-section, roughly given by
+
+$$
+\sigma\approx {e^4\over (k_BT)^2}
+$$
+
+(there is a Coulomb logarithm which I've set to 1 here). 
 * The timescale to transfer energy from protons to electrons is 
 
 $$

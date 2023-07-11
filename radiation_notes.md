@@ -72,7 +72,6 @@ A canonical example of thermal bremsstrahlung is X-ray emission from hot gas in 
 
 A really important concept is the idea of **self-absorption**. For every emission process, there is a corresponding absorption process. For a thermal gas this is given by Kirchoff's law $j_\nu = \epsilon_\nu/4\pi  = \alpha_\nu B_\nu = \rho \kappa_\nu B_\nu$ which relates the emissivity $j_\nu$ to the absorption opacity $\kappa_\nu$. (The argument is that this relation must hold frequency-by-frequency so that in a blackbody enclosure the radiation is the same as the radiation emitted, maintaining equilibrium). In the case of Bremsstrahliung, the absorption process is called **free-free absorption**, with opacity $\kappa_{ff}\propto 1/\nu^2$. 
 At low enough frequencies, the absorption opacity becomes large enough that the source is optically-thick to those photons, and so the spectrum is a Rayleigh Jeans spectrum $\propto \nu^2$ at the lowest frequencies.
-\end{itemize}
 
 ![Planck spectrum](figs/planck.pdf)
 
@@ -169,7 +168,7 @@ Multiple scatterings can also give rise to a power law spectrum of photons even 
 
 ### Synchrotron self-Compton
 
-If  we have a situation in which synchrotron photons are undergoing inverse Compton scattering, it can be possible for the power in inverse Compton to become comparable or try to exceed the synchrotron power supplying the seed photons. The ratio of powers is $P_C/P_S=U_\gamma/U_B$, the ratio of the photon and magnetic energy densities. The situation where $P_C$ exceeds $P_S$ is known as the ``inverse Compton catastrophe'', and corresponds to a brightness temperature of $10^{12}\ {\rm K}$ (e.g. Readhead 1994) above which synchrotron self-Compton can no longer be maintained.
+If  we have a situation in which synchrotron photons are undergoing inverse Compton scattering, it can be possible for the power in inverse Compton to become comparable or try to exceed the synchrotron power supplying the seed photons. The ratio of powers is $P_C/P_S=U_\gamma/U_B$, the ratio of the photon and magnetic energy densities. The situation where $P_C$ exceeds $P_S$ is known as the "inverse Compton catastrophe", and corresponds to a brightness temperature of $10^{12}\ {\rm K}$ (e.g. Readhead 1994) above which synchrotron self-Compton can no longer be maintained.
 
 ![Comptonization](figs/Comptonization.png)
 
@@ -187,7 +186,7 @@ We noted last time that the atomic energy scale moves into X-ray energies for at
 
 ![Chandra spectra](figs/Chandra.png)
 
-The H-like ionisation energy is $13.6\ \mathrm{eV}\ Z^2$, which is $0.49\ \mathrm{keV}$ for C, $0.87\ \mathrm{keV}$ for O, and $9.2\ \mathrm{keV}$ for Fe. The corresponding wavelength is $12.4$~\AA~$(E_\gamma/1\ \mathrm{keV})^{-1}$.
+The H-like ionisation energy is $13.6\ \mathrm{eV}\ Z^2$, which is $0.49\ \mathrm{keV}$ for C, $0.87\ \mathrm{keV}$ for O, and $9.2\ \mathrm{keV}$ for Fe. The corresponding wavelength is $12.4 \mathring A\  (E_\gamma/1\ \mathrm{keV})^{-1}$.
 
 ### Ionization states
 
@@ -198,7 +197,7 @@ The ionization state of each element depends on the temperature, there is a nice
 
 ### Some examples of lines
 
-The OVIII K$\alpha$ transition (ie. the electron transitions from $n=1$ to $n=2$) has an energy $(3/4)\times 0.87\ \mathrm{keV}$, which gives $19$~\AA\ which matches the energy of this line in the figure. 
+The OVIII K$\alpha$ transition (ie. the electron transitions from $n=1$ to $n=2$) has an energy $(3/4)\times 0.87\ \mathrm{keV}$, which gives $19\ \mathring A$, matching the wavelength of this line in the figure. 
 
 He-like ions have triplets (resonance, intercombination, and forbidden lines). You can see this in the Chandra spectra, e.g. in the OXVII lines. Here are two examples of energy levels. The oxygen one is from Gabriel \& Jordan (1969), the silicon one is from Wang et al. (2012):
 
@@ -216,12 +215,12 @@ An important emission line from black hole accretion disks is K$\alpha$. The lin
 
 The motion of electrons spirally around magnetic field lines is quantized, with energy level (Landau level) spacing $\hbar\omega_c=\hbar eB/m_e c=11.6\ {\rm keV}\ (B/10^{12}\ \mathrm{G})$. In accreting neutron stars with magnetic fields this strong,  the accretion flow is channeled onto the magnetic poles of the neutron star giving rise to an accreting X-ray pulsar.
 
-Cyclotron lines are often referred to as ``Cyclotron resonance scattering features'' (CRSFs). they arise when photons are scattered by electrons out of the line of sight. Gravitational redshift from the neutron star surface changes the line energy, and quantum effects can be important since $B$ is a significant fraction of $B_\mathrm{QED}=m_e^2c^3/(\hbar e)\approx 4.4\times 10^{13}\ \mathrm{G}$ (the magnetic field where the spacing between Landau levels is equal to the electron rest mass). See Coburn et al. (2006) for a review. Some sources show multiple harmonics. The energy of the observed line depends on the overall accretion rate of the source, which is telling us something about the geometry of the magnetic field and accretion column. 
+Cyclotron lines are often referred to as "Cyclotron resonance scattering features" (CRSFs). they arise when photons are scattered by electrons out of the line of sight. Gravitational redshift from the neutron star surface changes the line energy, and quantum effects can be important since $B$ is a significant fraction of $B_\mathrm{QED}=m_e^2c^3/(\hbar e)\approx 4.4\times 10^{13}\ \mathrm{G}$ (the magnetic field where the spacing between Landau levels is equal to the electron rest mass). See Coburn et al. (2006) for a review. Some sources show multiple harmonics. The energy of the observed line depends on the overall accretion rate of the source, which is telling us something about the geometry of the magnetic field and accretion column. 
 
 
 ### Electron-positron annhilation
 
-If cold enough, electron-positron pairs form a bound state ``positronium'' (binding energy is a few eV). The singlet state (para-positronium) decays in 0.12 ns to two photons; the triplet state (ortho-positronium) has a longer lifetime (138.6 ns) and decays into 3 photons, so forms a continuum.
+If cold enough, electron-positron pairs form a bound state "positronium" (binding energy is a few eV). The singlet state (para-positronium) decays in 0.12 ns to two photons; the triplet state (ortho-positronium) has a longer lifetime (138.6 ns) and decays into 3 photons, so forms a continuum.
 
 Churazov et al. (2005) reported a strong electron-positron annihilation line from the Galactic bulge seen with INTEGRAL. Here is their Fig. 1 showing the data and the fit with the line (singlet) and continuum (triplet) contributions:
 
