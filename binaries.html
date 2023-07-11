@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Binary evolution basics &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'binaries';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Binary evolution with MESA" href="exercise5.html" />
+    <link rel="prev" title="Time-dependent thin disk" href="exercise4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_notes.html">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_notes.html">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compact.html">Compact object interiors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise7.html">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbinaries.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/binaries.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Binary evolution basics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-on-the-roche-lobe-and-classical-mechanics-of-binaries">Background on the Roche lobe and classical mechanics of binaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-density-of-the-secondary">1. Mean density of the secondary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservative-mass-transfer-with-no-angular-momentum-losses">2. Conservative mass transfer with no angular momentum losses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accretion-driven-by-angular-momentum-losses">3. Accretion driven by angular momentum losses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-envelope">4. Common envelope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-to-contact">5. Time to contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-neutron-star-in-a-binary">6. Making a neutron star in a binary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="binary-evolution-basics">
+<h1>Binary evolution basics<a class="headerlink" href="#binary-evolution-basics" title="Permalink to this heading">#</a></h1>
+<p>An important class of accreting systems are compact objects accreting from a companion star in a close binary system. The orbital periods and accretion rates span a wide range of values depending on the type of companion star. Here, we want to cover the important ideas that determine how the binary evolves and what sets the accretion rate onto the compact object.</p>
+<section id="background-on-the-roche-lobe-and-classical-mechanics-of-binaries">
+<h2>Background on the Roche lobe and classical mechanics of binaries<a class="headerlink" href="#background-on-the-roche-lobe-and-classical-mechanics-of-binaries" title="Permalink to this heading">#</a></h2>
+<p>Some important points about binary stars:</p>
+<ul class="simple">
+<li><p>We’ll focus on circular orbits since tides usually circularize the orbit very efficiently when mass is being transferred between the two stars. The two stars orbit the center of mass of the system with orbital radii (distance from the star to the center of mass) <span class="math notranslate nohighlight">\(a_1\)</span> and <span class="math notranslate nohighlight">\(a_2\)</span> given by <span class="math notranslate nohighlight">\(M_1a_1=M_2a_2\)</span>, where <span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span> are the stellar masses.</p></li>
+<li><p>We’ll refer to the accreting star (the compact object) as the <strong>primary</strong> (star 1) and the mass donor as the <strong>secondary</strong> (star 2). The <strong>mass ratio</strong></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+q={M_2\over M_1}.
+\]</div>
+<ul class="simple">
+<li><p>The <strong>orbital period</strong> is related to the separation <span class="math notranslate nohighlight">\(a=a_1+a_2\)</span> by</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\Omega_{\rm orb}^2 = \left({2\pi\over P}\right)^2 = {GM_{\rm tot}\over a^3}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(M_{\rm tot}=M_1+M_2\)</span>. To get some sense of the numbers, here are some examples:</p>
+<div class="math notranslate nohighlight">
+\[
+a = 1.5\times 10^{13}\ {\rm cm}\ P_\mathrm{yr}^{2/3}\ \left({M_1\over M_\odot}\right)^{1/3}(1+q)^{1/3}\hspace{1.5cm}(1\,{\rm AU})
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+a = 2.9\times 10^{11}\ {\rm cm}\ P_\mathrm{day}^{2/3}\ \left({M_1\over M_\odot}\right)^{1/3}(1+q)^{1/3}\hspace{1.5cm}(4\,R_\odot)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+a = 3.5\times 10^{10}\ {\rm cm}\ P_\mathrm{hr}^{2/3}\ \left({M_1\over M_\odot}\right)^{1/3}(1+q)^{1/3}\hspace{1.5cm}(0.5\,R_\odot)
+\]</div>
+<p>where we’ve written the scalings in terms of the primary mass <span class="math notranslate nohighlight">\(M_1\)</span> and the mass ratio <span class="math notranslate nohighlight">\(q\)</span>.</p>
+<ul class="simple">
+<li><p>The total <strong>angular momentum in the orbit</strong> is</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+J = (M_1a_1^2+M_2a_2^2)\Omega = {a^2\Omega\over M_\mathrm{tot}^2}(M_1M_2^2 + M_2M_1^2) = {M_1M_2\over M_\mathrm{tot}} \sqrt{{GM_\mathrm{tot}a}}.
+\]</div>
+<ul class="simple">
+<li><p>A test particle moving in the frame rotating with the binary moves in the “Roche potential”</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\Phi = -{GM_1\over \left|\vec{r}-\vec{r_1}\right|}-{GM_2\over \left|\vec{r}-\vec{r_2}\right|}-{1\over 2}\left(\vec{\Omega\times\vec{r}}\right)
+\]</div>
+<p>(i.e. experiences a force <span class="math notranslate nohighlight">\(-\nabla\Phi\)</span>). The equipotential surfaces look like this:</p>
+<p><img alt="Roche potential" src="_images/roche.png" /></p>
+<p>(I took this figure (which shows the equipotentials force <span class="math notranslate nohighlight">\(q=0.26\)</span>) from the paper on ultra-luminous X-ray sources by <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2020A%26A...642A.174M/abstract">Misra et al. 2020</a>.)</p>
+<p>The <strong>Roche lobe</strong> is the equipotential that goes through the Lagrange point <span class="math notranslate nohighlight">\(L_1\)</span>. Only particles within the Roche lobe are bound to the star. This means that if the secondary star reaches a large enough radius to fill its Roche lobe, matter from the stellar surface will fall across <span class="math notranslate nohighlight">\(L_1\)</span> onto the primary. This is known as {\bf Roche lobe overflow}. (It is also possible for a star to lose mass through the <span class="math notranslate nohighlight">\(L_3\)</span> Lagrange point, but the potential at the <span class="math notranslate nohighlight">\(L_1\)</span> point is lower so mass flows over <span class="math notranslate nohighlight">\(L_3\)</span> only in cases where the star is expanding rapidly).</p>
+<p>Roche-lobe overflow is a common source of accretion in binaries. It can happen either when a star expands (e.g. when it runs out of hydrogen and evolves off the main sequence), or when the orbit shrinks due to angular momentum losses (more on that later). Another type of accretion is <strong>wind accretion</strong> in which the secondary star is within its Roche lobe, but part of the stellar wind is captured by the primary (e.g. massive X-ray binaries with a massive main sequence star orbiting a neutron star or black hole).</p>
+<ul class="simple">
+<li><p>The <strong>Roche lobe radius</strong> is defined as the radius of the sphere that has the same volume as the teardrop-shaped Roche lobe of the secondary star. A couple of useful fitting formulae are</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+{R_L\over a} = {0.49 q^{2/3}\over 0.6 q^{2/3} + \ln (1+q^{1/3})}
+\]</div>
+<p>(<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1983ApJ...268..368E/abstract">Eggleton 1983</a>) and simpler but for small <span class="math notranslate nohighlight">\(q&lt;1\)</span> only</p>
+<div class="math notranslate nohighlight">
+\[
+{R_L\over a} = {2\over 3^{4/3}}\left({q\over 1+q}\right)^{1/3} = 0.462\,\left({q\over 1+q}\right)^{1/3}\hspace{1cm} 0.1&lt;q&lt;0.8
+\]</div>
+<p>(<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183P/abstract">Pacznyski 1971</a>). The <span class="math notranslate nohighlight">\(q^{1/3}\)</span> scaling can be understood in the limit of small <span class="math notranslate nohighlight">\(q\)</span> simply by asking when tidal forces from the primary overcome the gravity of the secondary:</p>
+<div class="math notranslate nohighlight">
+\[
+{GM_2\over R_L^2}= {GM_1\over a^2}{R_L\over a}\Rightarrow R_L=a\left({M_2\over M_1}\right)^{1/3}
+\]</div>
+<p>(analogous to the Hill radius for planets in disks).</p>
+</section>
+<section id="mean-density-of-the-secondary">
+<h2>1. Mean density of the secondary<a class="headerlink" href="#mean-density-of-the-secondary" title="Permalink to this heading">#</a></h2>
+<p>(a) Using Paczynski’s formula for the Roche lobe radius, show that the mean density of the secondary star depends only on the orbital period</p>
+<div class="math notranslate nohighlight">
+\[
+\langle\rho_2\rangle\propto P_\mathrm{orb}^{-2}.
+\]</div>
+<p>Determine the constant of proportionality.</p>
+<p>(b) Assuming that main sequence stars have a mass radius relation <span class="math notranslate nohighlight">\(R_\star\approx R_\odot (M_\star/M_\odot)\)</span>, derive formulae for the mass and radius of a Roche-lobe filling star as a function of orbital period. At what orbital period would you expect the Sun to fill its Roche lobe?</p>
+<p>(c) Ultracompact binaries have orbital periods as short as <span class="math notranslate nohighlight">\(\approx 5\ {\rm mins}\)</span>. What can you conclude about the secondary star in these systems?</p>
+</section>
+<section id="conservative-mass-transfer-with-no-angular-momentum-losses">
+<h2>2. Conservative mass transfer with no angular momentum losses<a class="headerlink" href="#conservative-mass-transfer-with-no-angular-momentum-losses" title="Permalink to this heading">#</a></h2>
+<p>The term <strong>conservative mass transfer</strong> refers to the case where all the mass lost by the secondary is accreted by the primary, i.e. <span class="math notranslate nohighlight">\(M_\mathrm{tot}\)</span> is constant or <span class="math notranslate nohighlight">\(\dot M_1=-\dot M_2\)</span>.</p>
+<p>Assuming that the total angular momentum of the orbit remains constant (<span class="math notranslate nohighlight">\(\dot J=0\)</span>), show that the rate of change of the orbital separation <span class="math notranslate nohighlight">\(a\)</span> and the Roche lobe radius of the secondary <span class="math notranslate nohighlight">\(R_L\)</span> are given by</p>
+<div class="math notranslate nohighlight">
+\[
+{\dot a\over a} = 2 {(-\dot M_2)\over M_2}  (1-q)
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+{1\over 2}{\dot R_L\over R_L} =  {(-\dot M_2)\over M_2}\left({5\over 6}-q\right).
+\]</div>
+<p>You can use the Paczynski formula for the Roche radius. The results are written in terms of the positive quantity <span class="math notranslate nohighlight">\((-\dot M_2)&gt;0\)</span>.</p>
+<p>Consider a situation in which a star evolves until it fills its Roche lobe. What do you think happens next and how does it depend on the value of <span class="math notranslate nohighlight">\(q\)</span>?</p>
+</section>
+<section id="accretion-driven-by-angular-momentum-losses">
+<h2>3. Accretion driven by angular momentum losses<a class="headerlink" href="#accretion-driven-by-angular-momentum-losses" title="Permalink to this heading">#</a></h2>
+<p>Consider a situation with mass ratio <span class="math notranslate nohighlight">\(q&lt;5/6\)</span> in which a low mass star accretes onto a compact object. The mass transfer is conservative, but angular momentum is being lost from the binary <span class="math notranslate nohighlight">\(\dot J&lt;0\)</span> (the angular momentum loss can be due to gravitational radiation from the orbital motion, or carried away in the stellar wind). Assume that the radius of the star adjusts so that it always fills its Roche lobe <span class="math notranslate nohighlight">\(R_2=R_L\)</span>.</p>
+<p>(a) If the mass-radius relation of the star is given by <span class="math notranslate nohighlight">\(R_2\propto M_2^n\)</span>, show that</p>
+<div class="math notranslate nohighlight">
+\[
+{\dot a\over a} = {(-\dot M_2)\over M_2} \left({1\over 3}-n\right).
+\]</div>
+<p>What factors determine <span class="math notranslate nohighlight">\(n\)</span>? Starting with a solar mass star that fills its Roche lobe, how will the orbit evolve?</p>
+<p>(b) Derive a formula for <span class="math notranslate nohighlight">\(\dot M\)</span> in terms of <span class="math notranslate nohighlight">\(\dot J\)</span>. Gravitational radiation leads to angular momentum loss from a binary at a rate</p>
+<div class="math notranslate nohighlight">
+\[
+{\dot J\over J} = -{32\over 5}{G^3M_1M_2M_{\rm tot}\over c^5 a^4}.
+\]</div>
+<p>Calculate the accretion rate you would expect as a function of orbital period for the two cases <span class="math notranslate nohighlight">\(n=1\)</span> (main sequence star) and <span class="math notranslate nohighlight">\(n=1/3\)</span> (degenerate companion).</p>
+</section>
+<section id="common-envelope">
+<h2>4. Common envelope<a class="headerlink" href="#common-envelope" title="Permalink to this heading">#</a></h2>
+<p>A detached binary initially consists of two main sequence stars. The more massive star evolves off the main sequence, forming a giant star with core mass <span class="math notranslate nohighlight">\(M_c\)</span> and envelope mass <span class="math notranslate nohighlight">\(M_{\rm env}\)</span> (total mass <span class="math notranslate nohighlight">\(M_2=M_\mathrm{env}\)</span> <span class="math notranslate nohighlight">\(+ M_c\)</span>). The core (<span class="math notranslate nohighlight">\(M_c\)</span>) and the companion star (<span class="math notranslate nohighlight">\(M_1\)</span>) orbit within the envelope. The drag on the two stars as they move through the gas in the envelope leads to a loss of energy from the orbit which goes into ejecting the envelope.</p>
+<p>Calculate the ratio of the new orbital separation <span class="math notranslate nohighlight">\(a_f\)</span> after the envelope has been ejected to the initial separation <span class="math notranslate nohighlight">\(a_i\)</span>. Assume that a fraction <span class="math notranslate nohighlight">\(\eta\)</span> of the change in orbital energy goes into ejecting the envelope, and that the initial orbital separation is <span class="math notranslate nohighlight">\(a_i\)</span>. The binding energy of the envelope can be written as <span class="math notranslate nohighlight">\(GM_2M_{\rm env}/(\lambda R_2)\)</span> where <span class="math notranslate nohighlight">\(\lambda\)</span> is a (constant) parameter (that can be determined from detailed envelope models). Assuming <span class="math notranslate nohighlight">\(\lambda\sim 0.3\)</span> (a typical value for red giant envelopes), how small could <span class="math notranslate nohighlight">\(a_f/a_i\)</span> be?</p>
+</section>
+<section id="time-to-contact">
+<h2>5. Time to contact<a class="headerlink" href="#time-to-contact" title="Permalink to this heading">#</a></h2>
+<p>Consider a detached binary system with stellar masses <span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span> and initial orbital period <span class="math notranslate nohighlight">\(P_{\rm orb}\)</span>. Gravitational radiation takes away angular momentum from the orbit and gradually the orbit shrinks. How long will it take for the stars to come into contact?</p>
+<p>Apply your answer to (1) a newly-discovered binary neutron star system – what must the orbital period be if the neutron stars are to merge in a Hubble time? (i.e. <span class="math notranslate nohighlight">\(\sim 10\)</span> Gyrs); (2) After a common-envelope phase, a main sequence star is left orbiting a white dwarf but not close enough to fill its Roche lobe – what must the orbital period be to ensure accretion begins within a Hubble time?</p>
+</section>
+<section id="making-a-neutron-star-in-a-binary">
+<h2>6. Making a neutron star in a binary<a class="headerlink" href="#making-a-neutron-star-in-a-binary" title="Permalink to this heading">#</a></h2>
+<p>Consider two stars with masses <span class="math notranslate nohighlight">\(M_1\)</span> and <span class="math notranslate nohighlight">\(M_2\)</span> in a circular orbit around each other with separation <span class="math notranslate nohighlight">\(a_i\)</span>. The more massive star undergoes a supernova, ejecting a mass <span class="math notranslate nohighlight">\(\Delta M\)</span>. Assume that the supernova ejects the mass instantaneously (the ejecta velocity is <span class="math notranslate nohighlight">\(\gg\)</span> the orbital velocity). Show that (1) the binary will be unbound if the mass ejected is more than half the total mass of the two stars, (2) the orbit is eccentric after the supernova, (3) the binary can remain bound even when more than half the mass is ejected if the neutron star receives a kick velocity from the supernova.</p>
+<p>[Useful results: for two bodies moving under their mutual gravitational attraction, the total energy is <span class="math notranslate nohighlight">\(-GM_1M_2/r + (1/2)\mu v^2\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the separation, <span class="math notranslate nohighlight">\(v\)</span> is the relative velocity and <span class="math notranslate nohighlight">\(\mu=M_1M_2/M_{\rm tot}\)</span> is the reduced mass. The orbital energy is also <span class="math notranslate nohighlight">\(-GM_1M_2/2a\)</span> where <span class="math notranslate nohighlight">\(a\)</span> is the semi-major axis. The angular momentum of the orbit is <span class="math notranslate nohighlight">\(J=\mu\sqrt{GM_\mathrm{tot}a(1-e^2)}\)</span> for eccentricity <span class="math notranslate nohighlight">\(e\)</span>.]</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="exercise4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Time-dependent thin disk</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exercise5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Binary evolution with MESA</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-on-the-roche-lobe-and-classical-mechanics-of-binaries">Background on the Roche lobe and classical mechanics of binaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mean-density-of-the-secondary">1. Mean density of the secondary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservative-mass-transfer-with-no-angular-momentum-losses">2. Conservative mass transfer with no angular momentum losses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accretion-driven-by-angular-momentum-losses">3. Accretion driven by angular momentum losses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-envelope">4. Common envelope</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#time-to-contact">5. Time to contact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-a-neutron-star-in-a-binary">6. Making a neutron star in a binary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

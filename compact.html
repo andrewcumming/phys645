@@ -1,0 +1,590 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Compact object interiors &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'compact';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Black hole imaging" href="exercise7.html" />
+    <link rel="prev" title="Making gravitational wave sources" href="exercise6.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_notes.html">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_notes.html">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binaries.html">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Compact object interiors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise7.html">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcompact.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/compact.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Compact object interiors</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-star-outer-layers">Neutron star outer layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solid-plasma">Solid plasma?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#white-dwarf-cooling">White dwarf cooling</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="compact-object-interiors">
+<h1>Compact object interiors<a class="headerlink" href="#compact-object-interiors" title="Permalink to this heading">#</a></h1>
+<section id="neutron-star-outer-layers">
+<h2>Neutron star outer layers<a class="headerlink" href="#neutron-star-outer-layers" title="Permalink to this heading">#</a></h2>
+<p>Although the core of a neutron star is made of free neutrons and protons (“one big nucleus”), the outer parts of the star are a fully-ionized plasma with nuclei and degenerate electrons. In this question, we’ll look at the composition as we go from the surface deeper into the star.</p>
+<p>The binding energy of a nucleus with <span class="math notranslate nohighlight">\(Z\)</span> protons and <span class="math notranslate nohighlight">\(N\)</span> neutrons (total number of nucleons <span class="math notranslate nohighlight">\(A=Z+N\)</span>) is approximately given by the <a class="reference external" href="https://en.wikipedia.org/wiki/Semi-empirical_mass_formula">semi-empirical mass formula</a></p>
+<div class="math notranslate nohighlight">
+\[
+{E_B(A,Z)\over c^2} = Zm_p + Nm_n - M(A,Z) = a_VA - a_S A^{2/3} - a_C {Z^2\over A^{1/3}} -a_A{(A-2Z)^2\over A}.
+\]</div>
+<p>Here <span class="math notranslate nohighlight">\(M(A,Z)\)</span> is the mass of the nucleus with mass <span class="math notranslate nohighlight">\(A\)</span> and charge <span class="math notranslate nohighlight">\(Z\)</span>. This is a physically-motivated empirical formula that is fit to nuclear data to determine the best fit constants <span class="math notranslate nohighlight">\(a_V\approx 15.8\ {\rm MeV}\)</span>, <span class="math notranslate nohighlight">\(a_S\approx 17.8\ {\rm MeV}\)</span>, <span class="math notranslate nohighlight">\(a_C\approx 0.711\ {\rm MeV}\)</span>, and <span class="math notranslate nohighlight">\(a_A\approx 23.7\ {\rm MeV}\)</span>. The proton and neutron masses are <span class="math notranslate nohighlight">\(m_p \approx  938.272\ {\rm MeV}\)</span> and <span class="math notranslate nohighlight">\(m_n \approx 939.565\ {\rm MeV}\)</span>.</p>
+<p>(a) The four terms on the right hand side are the volume, surface, Coulomb, and asymmetry terms\footnote{A pairing term is also often added to this formula which favors nuclei with even numbers of neutrons and protons, but we ignore that here.}. Can you tell from the scalings with <span class="math notranslate nohighlight">\(Z\)</span> and <span class="math notranslate nohighlight">\(A\)</span> and the signs of the different terms why they have these names?</p>
+<p>(b) Plot a color map of the binding energy per nucleon (<span class="math notranslate nohighlight">\(E_B/A\)</span>) as a function of <span class="math notranslate nohighlight">\(N\)</span> on the <span class="math notranslate nohighlight">\(x\)</span>-axis and <span class="math notranslate nohighlight">\(Z\)</span> on the <span class="math notranslate nohighlight">\(y\)</span>-axis. You should see the “stability valley”, the nuclei that have the largest binding energies for each element (<span class="math notranslate nohighlight">\(Z\)</span>). How does <span class="math notranslate nohighlight">\(N\)</span> scale with <span class="math notranslate nohighlight">\(Z\)</span> for these most stable nuclei? Does it look as you expect? Do you recognize some of the nuclei in the stability valley? It might be helpful to add the curve showing the <span class="math notranslate nohighlight">\(N\)</span> that maximizes the binding energy as a function of <span class="math notranslate nohighlight">\(Z\)</span>.</p>
+<p>(c) Now consider the neutron separation energy <span class="math notranslate nohighlight">\(S_n\)</span> which is the energy it takes to remove a neutron from a nucleus</p>
+<div class="math notranslate nohighlight">
+\[
+{S_n(A,Z)\over c^2} =   m_n + M(A-1,Z) - M(A,Z) = E_B(A,Z) - E_B(A-1,Z).
+\]</div>
+<p>If <span class="math notranslate nohighlight">\(S_n&lt;0\)</span>, the nucleus will spontaneously spit out a neutron, it is neutron unbound. Plot a color map of <span class="math notranslate nohighlight">\(S_n\)</span> and identify the {\bf neutron drip line}, the boundary between nuclei that are neutron bound and unbound.</p>
+<p>(d) In a neutron star, the electrons are degenerate with energy <span class="math notranslate nohighlight">\(E_F\)</span>, so the energy we need to consider for a given nucleus is actually</p>
+<div class="math notranslate nohighlight">
+\[
+Z E_F + M(A,Z).
+\]</div>
+<p>The Fermi energy for relativistic electrons is</p>
+<div class="math notranslate nohighlight">
+\[
+E_F = \hbar c k_F = \hbar c (3\pi^2 n_e)^{1/3} = \hbar c \left({3\pi^2\over m_p}\right)^{1/3}Y_e^{1/3}\rho^{1/3} \approx 5.1\ {\rm MeV}\ \rho_9^{1/3}Y_e^{1/3},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(Y_e=n_em_p/\rho = Z/A\)</span> for a single species of nucleus.</p>
+<p>Because electrons have a large Fermi energy, they can capture onto nuclei changing the <span class="math notranslate nohighlight">\(Z\)</span>. Therefore, the <span class="math notranslate nohighlight">\(Z\)</span> can adjust (at fixed <span class="math notranslate nohighlight">\(A\)</span>) to lower the energy.</p>
+<p>For example, consider a nucleus with <span class="math notranslate nohighlight">\(A=56\)</span>. Find the <span class="math notranslate nohighlight">\(Z\)</span> that minimizes the energy for that nucleus as a function of density (you can try a range of densities from <span class="math notranslate nohighlight">\(\rho = 10^8\)</span>–<span class="math notranslate nohighlight">\(10^{12}\ {\rm g\ cm^{-3}}\)</span>). Do you get the answer you expect at low density? What happens at higher densities? Check to see whether these nuclei are neutron-unbound. You should find that there is a density where neutrons start to spontaneously be released from the nuclei – {\bf neutron drip}.</p>
+<p>(e) How deep into the star is neutron drip? You can estimate this using the pressure scale height <span class="math notranslate nohighlight">\(P/\rho g\)</span> at that depth.</p>
+</section>
+<section id="solid-plasma">
+<h2>Solid plasma?<a class="headerlink" href="#solid-plasma" title="Permalink to this heading">#</a></h2>
+<p>Consider a fully-ionized plasma consisting of degenerate electrons and nuclei (ions) with charge <span class="math notranslate nohighlight">\(Z\)</span> and mass <span class="math notranslate nohighlight">\(A\)</span>. The degenerate electrons in white dwarfs and neutron stars have such large Fermi energies that they don’t really feel the electrostatic forces from the ions and so we can assume that they form a smooth background of negative charge (with <span class="math notranslate nohighlight">\(n_e\)</span> electrons per unit volume).</p>
+<p>The ratio of Coulomb to thermal energy for the ions is</p>
+<div class="math notranslate nohighlight">
+\[
+\Gamma = {Z^2 e^2\over a k_BT},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span> is the mean separation between ions given by <span class="math notranslate nohighlight">\((4\pi/3) n_i a^3 =1\)</span> and <span class="math notranslate nohighlight">\(n_i = \rho/Am_p\)</span> is the ion density. At temperatures that are low enough that <span class="math notranslate nohighlight">\(\Gamma\)</span> becomes large, the thermal energy is negligible and then the Coulomb repulsion between ions makes the ions fall into a lattice – the plasma forms a solid. At higher temperatures, thermal motions of the ions become significant, <span class="math notranslate nohighlight">\(\Gamma\)</span> drops, and the ions are able to move around, becoming liquid for <span class="math notranslate nohighlight">\(\Gamma&lt;\Gamma_{\rm melt}\)</span> and finally gas for <span class="math notranslate nohighlight">\(\Gamma&lt;1\)</span>.</p>
+<p>(a) Imagine perturbing one of the ions from its equilibrium position in the lattice by an amount <span class="math notranslate nohighlight">\(\delta r\ll a\)</span>. Estimate the restoring force it will feel from the Coulomb repulsion of it’s nearest neighbours, and therefore the spring constant. Next, assuming thermal equilibrium so that degrees of freedom get <span class="math notranslate nohighlight">\((1/2)k_BT\)</span> of energy, estimate the mean-square displacement of the ion about its equilibrium position as a function of temperature.</p>
+<p>(b) {\em Lindemann’s criterion} is an <a class="reference external" href="https://en.wikipedia.org/wiki/Melting_point#Predicting_the_melting_point_of_substances_(Lindemann's_criterion)">empircal rule</a> for when a solid melts which is that the solid will melt when <span class="math notranslate nohighlight">\(\langle (\delta r)^2\rangle\sim c^2a^2\)</span> with <span class="math notranslate nohighlight">\(c\approx 0.15\)</span>–<span class="math notranslate nohighlight">\(0.3\)</span>. Use this to estimate the value of <span class="math notranslate nohighlight">\(\Gamma_m\)</span>. Molecular dynamics simulations of these kinds of plasmas give <span class="math notranslate nohighlight">\(\Gamma_m\approx 175\)</span>. How does your answer compare?</p>
+<p>(c) Using the more accurate value for <span class="math notranslate nohighlight">\(\Gamma_m\approx 175\)</span>, calculate the melting temperature as a function of density, <span class="math notranslate nohighlight">\(Z\)</span>, and <span class="math notranslate nohighlight">\(A\)</span>. Make a plot showing the melting curve in the <span class="math notranslate nohighlight">\(\rho\)</span>–<span class="math notranslate nohighlight">\(T\)</span> plane for different nuclei <span class="math notranslate nohighlight">\((Z,A)\)</span>. Apply your formula to white dwarfs and neutron star envelopes. Do we expect to find solid plasmas in nature? Are white dwarfs gas, liquid, or solid inside?</p>
+</section>
+<section id="white-dwarf-cooling">
+<h2>White dwarf cooling<a class="headerlink" href="#white-dwarf-cooling" title="Permalink to this heading">#</a></h2>
+<p>The degenerate electrons inside white dwarfs are excellent conductors of heat, so white dwarfs are expected to be isothermal except for the outermost lower density layers. This means that the thermal content of the white dwarf is approximately <span class="math notranslate nohighlight">\(E = M c_V T_c\)</span> where <span class="math notranslate nohighlight">\(M\)</span> is the mass of the star, <span class="math notranslate nohighlight">\(c_V\approx 3k_B\)</span> per nucleus is the specific heat, and <span class="math notranslate nohighlight">\(T_c\)</span> is the internal temperature (core temperature).</p>
+<p>The rate at which the white dwarf cools is set by the surface luminosity</p>
+<div class="math notranslate nohighlight">
+\[
+L = 4\pi R^2 \sigma T_s^4,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(T_s\)</span> is the surface temperature. If we knew how the surface temperature depended on the core temperature <span class="math notranslate nohighlight">\(T_s(T_c)\)</span>, we could then calculate the cooling rate</p>
+<div class="math notranslate nohighlight">
+\[
+M c_V{dT_c\over dt} = -L = -4\pi R^2\sigma \left[T_s(T_c)\right]^4.
+\]</div>
+<p>There is a famous argument by Mestel that gives an estimate for <span class="math notranslate nohighlight">\(T_s(T_c)\)</span> and allows us to predict the temperature history of white dwarfs.</p>
+<p>(a) To find the relation between surface and core temperatures, we need the temperature gradient in the thin low density outer layers (these layers are sometimes discussed as being a “blanket” over the core and controlling how quickly it can cool down). The thermal diffusion equation is</p>
+<div class="math notranslate nohighlight">
+\[
+L = -4\pi R^2 {4acT^3\over 3\kappa\rho}{dT\over dr},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\kappa\)</span> is the radiative opacity. Replace <span class="math notranslate nohighlight">\(L\)</span> with <span class="math notranslate nohighlight">\(T_s\)</span> using equation (\ref{eq:L}), assuming an opacity of the form <span class="math notranslate nohighlight">\(\kappa=\kappa_0 \rho T^{-7/2}\)</span>, ideal gas <span class="math notranslate nohighlight">\(P=\rho k_BT/\mu m_p\)</span>, and using hydrostatic balance <span class="math notranslate nohighlight">\(dP/dr=-\rho g\)</span> to change variables from <span class="math notranslate nohighlight">\(r\)</span> to <span class="math notranslate nohighlight">\(P\)</span> (in this thin surface layer <span class="math notranslate nohighlight">\(g=GM/R^2\)</span> is a constant), integrate this equation and show that <span class="math notranslate nohighlight">\(T_s\)</span> and <span class="math notranslate nohighlight">\(T_c\)</span> are related by</p>
+<div class="math notranslate nohighlight">
+\[
+T_s^4\approx {64\over 51} {gk_B\over \kappa_0\mu m_p}{T_c^{17/2}\over P_b^2} ,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(P_b\)</span> is the pressure at the base of the layer.</p>
+<p>(b) The key insight of Mestel is that the base pressure <span class="math notranslate nohighlight">\(P_b\)</span> where the temperature becomes isothermal corresponds to the transition from ideal gas to degeneracy pressure. Show first that for non-relativistic degenerate electrons, <span class="math notranslate nohighlight">\(P_e\propto E_F^{5/2}\)</span> with a proportionality constant that you can derive. Now set <span class="math notranslate nohighlight">\(E_F=k_BT_c\)</span> at <span class="math notranslate nohighlight">\(P_e=P_b\)</span> gives <span class="math notranslate nohighlight">\(P_b\propto T_c^{5/2}\)</span>, again with a proportionality constant that you can derive.</p>
+<p>(c) Use the results of parts (a) and (b) to derive an equation for the cooling luminosity as a function of the white dwarf mass <span class="math notranslate nohighlight">\(M\)</span> and the core temperature <span class="math notranslate nohighlight">\(T_c\)</span>. Put numbers into your answer.</p>
+<p>(d) Use your answers so far to derive an expression for <span class="math notranslate nohighlight">\(T_c\)</span> as a function of time for white dwarfs. Put numbers into your answer. How should <span class="math notranslate nohighlight">\(T_s\)</span> or <span class="math notranslate nohighlight">\(L\)</span> depend on time for white dwarfs of different masses?</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="exercise6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Making gravitational wave sources</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exercise7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Black hole imaging</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neutron-star-outer-layers">Neutron star outer layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solid-plasma">Solid plasma?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#white-dwarf-cooling">White dwarf cooling</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,547 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Black hole imaging &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'exercise7';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lightcurve of a transient" href="exercise8.html" />
+    <link rel="prev" title="Compact object interiors" href="compact.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_notes.html">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_notes.html">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binaries.html">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compact.html">Compact object interiors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fexercise7.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/exercise7.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Black hole imaging</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-photon-deflection">Part 1: Photon deflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-imaging-black-holes-and-neutron-stars">Part 2: Imaging black holes and neutron stars</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="black-hole-imaging">
+<h1>Black hole imaging<a class="headerlink" href="#black-hole-imaging" title="Permalink to this heading">#</a></h1>
+<p>You have probably seen the amazing images of the black holes in M87 and Sgr A<span class="math notranslate nohighlight">\(^\star\)</span> from the <a class="reference external" href="https://eventhorizontelescope.org">Event Horizon Telescope</a>. The idea in this exercise is to investigate photon trajectories near black holes to understand the role of light bending in these images. Light bending is also important for neutron stars because it sets their apparent size and limits the modulation amplitude that can be achieved from a hot spot on the surface of a rotating neutron star.</p>
+<p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1979A%26A....75..228L/abstract">Luminet et al. 1979</a> first calculated what the image of a black hole would look like, assuming a non-rotating (Schwarzschild) black hole surrounded by a thin accretion disk. This kind of image — with much more detail and for a rotating black hole — appeared famously in the movie <a class="reference external" href="https://www.wired.com/2014/10/astrophysics-interstellar-black-hole/">Interstellar</a> (see <a class="reference external" href="https://iopscience.iop.org/article/10.1088/0264-9381/32/6/065001">Oliver et al. 2015</a>).</p>
+<p>The trajectory of a photon near a Schwarzschild black hole is given by</p>
+<div class="math notranslate nohighlight">
+\[
+{d\phi\over dr} = \pm {1\over r^2} \left[{1\over b^2} - {1\over r^2}\left(1-{2GM\over rc^2}\right)\right]^{-1/2} \hspace{2cm} (*)
+\]</div>
+<p>(e.g. equation 2 of <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1979A%26A....75..228L/abstract">Luminet 1979</a>). The trajectory is written in terms of the radial <span class="math notranslate nohighlight">\(r\)</span> and azimuthal <span class="math notranslate nohighlight">\(\phi\)</span> coordinates (because of the spherical symmetry, the photon orbit is confined to a plane, so we can always choose this to be the equatorial plane <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>). The constant <span class="math notranslate nohighlight">\(b\)</span> is the impact parameter, the ratio <span class="math notranslate nohighlight">\(L/E\)</span> of angular momentum to energy of the orbit. In the Newtonian case where photons travel in straight lines, the impact parameter is the distance of closest approach. For the general case including black hole rotation, you can look at <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1972ApJ...178..347B/abstract">Bardeen, Press &amp; Teukolsky 1972</a> (see their equations 2.9a–d).</p>
+<section id="part-1-photon-deflection">
+<h2>Part 1: Photon deflection<a class="headerlink" href="#part-1-photon-deflection" title="Permalink to this heading">#</a></h2>
+<p>Use equation (*) to calculate the trajectories of photons travelling from a large distance towards a black hole with different impact parameters <span class="math notranslate nohighlight">\(b\)</span>. In Newtonian physics, the photons would travel in a straight line, but in general relativity you should find that they are deflected by the black hole. Make a plot that shows the paths of photons with different impact parameters.</p>
+<p>Some hints:</p>
+<ul class="simple">
+<li><p>It makes it easier to use units of Schwarzschild radius <span class="math notranslate nohighlight">\(r_S=2GM/c^2\)</span> for length and then the GR term in equation (*) is just <span class="math notranslate nohighlight">\(1-1/r\)</span>.</p></li>
+<li><p>The distance of closest approach <span class="math notranslate nohighlight">\(r_c\)</span> (periastron) of the orbit is the value of <span class="math notranslate nohighlight">\(r\)</span> that makes the square bracket in equation (*) vanish. So before you integrate the orbit, you can solve for <span class="math notranslate nohighlight">\(r_c\)</span>. (Find the root numerically, e.g. you can use <code class="docutils literal notranslate"><span class="pre">scipy.optimize.brentq</span></code>.</p></li>
+<li><p>You will need to choose a plus or minus sign on the right hand side of equation (\ref{eq:drdphi}) for different parts of the orbit. One approach is to integrate <span class="math notranslate nohighlight">\(d\phi/dr\)</span> from large <span class="math notranslate nohighlight">\(r\)</span> down to <span class="math notranslate nohighlight">\(r_c\)</span> with one sign for the inwards part of the trajectory, and then integrate out again from <span class="math notranslate nohighlight">\(r_c\)</span> to large <span class="math notranslate nohighlight">\(r\)</span> with the opposite sign for the outwards part.</p></li>
+<li><p>You can plot the resulting <span class="math notranslate nohighlight">\(r(\phi)\)</span> using a polar plot (e.g. <code class="docutils literal notranslate"><span class="pre">plt.subplots(subplot_kw={'projection':</span> <span class="pre">'polar'})</span></code> in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>).</p></li>
+<li><p>For large impact parameters, you should see the analytic result that the deflection angle is <span class="math notranslate nohighlight">\(2r_s/b\)</span>. As you reduce the impact parameter, you should find a value of impact parameter where the photon is deflected back in the direction it came from (see Figure 2 of <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1979A%26A....75..228L/abstract">Luminet 1979</a>). For (slightly) smaller values <span class="math notranslate nohighlight">\(b\)</span> the photons have even larger deflection angles and begin to loop around the black hole.</p></li>
+</ul>
+</section>
+<section id="part-2-imaging-black-holes-and-neutron-stars">
+<h2>Part 2: Imaging black holes and neutron stars<a class="headerlink" href="#part-2-imaging-black-holes-and-neutron-stars" title="Permalink to this heading">#</a></h2>
+<p>(a) Now consider observing a thin disk around a black hole from an angle <span class="math notranslate nohighlight">\(\theta_d\)</span> above the disk plane (<span class="math notranslate nohighlight">\(\theta_d=\pi/2\)</span> corresponds to the disk being face on; <span class="math notranslate nohighlight">\(\theta_d=0\)</span> edge on). Figure 6 of <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1979A%26A....75..228L/abstract">Luminet 1979</a> shows what the disk would look like in terms of contours of constant radial distance from the black hole. Use your calculation to check these figures along the vertical and horizontal axes (i.e. do you agree with the vertical and horizontal offsets of these curves?).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An extension of this question would be to figure out the angles and make your own version of Figure 6, but it’s complicated, so for simplicity here we can restrict ourselves to looking at the vertical and horizontal parts only.</p>
+</div>
+<p>(b) Use your calculation to calculate the apparent size of a neutron star with radius <span class="math notranslate nohighlight">\(r=R\)</span> (the neutron star looks larger to a distant observer because light from the back side of the neutron star bends around and can reach the observer). Check that your answer is consistent with <span class="math notranslate nohighlight">\(L=4\pi R^2\sigma T^4\)</span> given that the temperature redshifts by one power of <span class="math notranslate nohighlight">\(1+z\)</span> and luminosity by two powers of <span class="math notranslate nohighlight">\(1+z\)</span>, where <span class="math notranslate nohighlight">\(1+z = (1-2GM/Rc^2)^{-1/2}\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An extension of this problem would be to consider a ``hot spot’’ on the surface of a neutron star and calculate the observed flux as the neutron star rotates and the hot spot travels into and out of the line of sight. Light bending means that you can see some of the hot spot even when it is on the back side of the star relative to the line of sight, reducing the luminosity amplitude variation that can be achieved.</p>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="compact.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Compact object interiors</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exercise8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lightcurve of a transient</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-photon-deflection">Part 1: Photon deflection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-imaging-black-holes-and-neutron-stars">Part 2: Imaging black holes and neutron stars</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

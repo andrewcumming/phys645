@@ -1,0 +1,745 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Accretion in high energy astrophysics &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'accretion_notes';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Space-based high energy observatories" href="exercise1.html" />
+    <link rel="prev" title="Electromagnetic radiation mechanisms" href="radiation_notes.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_notes.html">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binaries.html">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compact.html">Compact object interiors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise7.html">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Faccretion_notes.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/accretion_notes.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Accretion in high energy astrophysics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-efficiency-of-accretion">The efficiency of accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bondi-accretion">Bondi accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-accretion-disk">Thin accretion disk</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accretion-onto-a-magnetized-star">Accretion onto a magnetized star</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-things-we-didn-t-talk-about">Some things we didn’t talk about</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="accretion-in-high-energy-astrophysics">
+<h1>Accretion in high energy astrophysics<a class="headerlink" href="#accretion-in-high-energy-astrophysics" title="Permalink to this heading">#</a></h1>
+<p>Accretion is an important source of energy in high energy astrophysics because as we will see it allows for efficient conversion of gravitational energy to luminosity. We will first discuss the efficiency of accretion and then talk about three modes of accretion: Bondi accretion from the interstellar medium, thin disks, and magnetized accretion.</p>
+<section id="the-efficiency-of-accretion">
+<h2>The efficiency of accretion<a class="headerlink" href="#the-efficiency-of-accretion" title="Permalink to this heading">#</a></h2>
+<p>Consider accretion of gas onto a star of mass <span class="math notranslate nohighlight">\(M\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span>. The infalling gas will reach the surface of the star with kinetic energy per unit mass <span class="math notranslate nohighlight">\(v^2\sim GM/R\)</span>. Assuming this energy is radiated away gives an accretion luminosity</p>
+<div class="math notranslate nohighlight">
+\[
+L_\mathrm{accr} = {GM\over R}\dot M
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\dot M\)</span> is the accretion rate.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You’ll see accretion rates given as both <span class="math notranslate nohighlight">\(\mathrm{g\ s^{-1}}\)</span> and <span class="math notranslate nohighlight">\(M_\odot\ \mathrm{yr^{-1}}\)</span>. A useful conversion between these is <span class="math notranslate nohighlight">\(10^{18}\ \mathrm{g\ s^{-1}}\approx 10^{-8}\ M_\odot\ \mathrm{yr}^{-1}\)</span>. This also happens to be the accretion rate which gives an accretion luminosity of <span class="math notranslate nohighlight">\(\sim L_\mathrm{Edd}\sim 10^{38}\ \mathrm{erg\ s^{-1}}\)</span> for a <span class="math notranslate nohighlight">\(\sim 1\ M_\odot\)</span> star.</p>
+</div>
+<p>It is useful to define an accretion efficiency <span class="math notranslate nohighlight">\(\eta\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[
+L_\mathrm{accr}= \eta \dot M c^2.
+\]</div>
+<p>For the case where all of the accretion energy goes into radiation, we have <span class="math notranslate nohighlight">\(\eta\approx GM/Rc^2 = R_S/2R\)</span> where <span class="math notranslate nohighlight">\(R_S=2GM/c^2=3\ \mathrm{km}\ (M/M_\odot)\)</span> is the Schwarzschild radius.</p>
+<p>Compact objects such as neutron stars and black holes can convert a significant amount of gravitational energy into radiation. For a neutron star, we have</p>
+<div class="math notranslate nohighlight">
+\[
+\eta\approx {GM\over Rc^2} = 0.148\ \left({M\over M_\odot}\right)\left({R\over 10\ {\rm km}}\right)^{-1}
+\]</div>
+<p>which shows that the accretion energy is a significant fraction of the rest mass energy,</p>
+<div class="math notranslate nohighlight">
+\[
+{GMm_p\over R}\approx 140\ \mathrm{MeV}\ \left({M\over M_\odot}\right)\left({R\over 10\ {\rm km}}\right)^{-1}
+\]</div>
+<p>compared to the proton rest mass <span class="math notranslate nohighlight">\(m_pc^2\sim \mathrm{GeV}\)</span>. For a white dwarf, with a radius <span class="math notranslate nohighlight">\(\sim 1000\)</span>~times larger than a neutron star, the gravitational energy is of order <span class="math notranslate nohighlight">\(\sim 100\ \mathrm{keV}\)</span> per proton. We can compare these numbers with the efficiency of nuclear burning: hydrogen burning to helium gives <span class="math notranslate nohighlight">\(\approx 7\)</span> MeV per nucleon, corresponding to <span class="math notranslate nohighlight">\(\eta\approx 0.007\)</span>.</p>
+<p>Black holes are more complicated because they do not have a solid surface. If the gravitational energy is efficiently converted to radiation in the accretion flow, efficiencies comparable to the neutron star value are possible. For a Schwarzschild black hole, the energy of the innermost stable orbit (ISCO) at <span class="math notranslate nohighlight">\(6GM/c^2=3R_S\)</span> gives <span class="math notranslate nohighlight">\(\eta=0.057\)</span>. For a maximally-rotating black hole, the innermost stable orbit moves inwards giving <span class="math notranslate nohighlight">\(\eta\approx 0.42\)</span>. However, if the accretion flow does not radiate efficiently, the accretion energy could be carried across the event horizon, corresponding to a much smaller <span class="math notranslate nohighlight">\(\eta\)</span>. A key question is how well the electrons and protons are coupled, since the protons carry the gravitational energy but the electrons radiate.</p>
+<p>We observe both efficient and inefficient accretion. For example, in AGN, accretion occurs in a disk on a timescale set by viscous processes, which gives plenty of time for protons to share their energy with the electrons. The luminosity is</p>
+<div class="math notranslate nohighlight">
+\[
+L\approx 10^{47}\ \mathrm{erg\ s^{-1}}\ \left({\eta\over 0.1}\right)\left({\dot M\over 10\ M_\odot\ \mathrm{yr}^{-1}}\right).
+\]</div>
+<p>The black hole at the Galactic centre on the other hand, Sgr A<span class="math notranslate nohighlight">\(^\star\)</span> has a very low efficiency. Based on conditions near the black hole, the accretion rate is estimated to be <span class="math notranslate nohighlight">\(\sim 10^{-15}\ M_\odot\ \mathrm{yr}^{-1}\)</span> but the luminosity is only <span class="math notranslate nohighlight">\(\approx 3\times 10^{33}\ \mathrm{erg\ s^{-1}}\)</span>, corresponding to <span class="math notranslate nohighlight">\(\eta\approx 3\times 10^{-9}\)</span> (e.g. see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2001Natur.413...45B/abstract">Baganoff et al. 2001</a>). The flow in this case is spherical with rapid infall. There is little time for heating the electrons or radiating; in this case a ``two-temperature plasma’’ develops in which the electron and proton temperatures can be very different.</p>
+</section>
+<section id="bondi-accretion">
+<h2>Bondi accretion<a class="headerlink" href="#bondi-accretion" title="Permalink to this heading">#</a></h2>
+<p>The simplest geometry for an accretion flow is to consider spherically-symmetric accretion of gas onto a point mass. This is known as Bondi accretion.</p>
+<p>To see the scalings, it is simpler first to think about the flow of gas onto a star moving with velocity <span class="math notranslate nohighlight">\(v\)</span> through a uniform medium (e.g.~the interstellar medium). The star will sweep up mass at a rate</p>
+<div class="math notranslate nohighlight">
+\[
+\dot M\sim \pi b^2 \rho v,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the gas density, and <span class="math notranslate nohighlight">\(b\)</span> is the capture radius given roughly by</p>
+<div class="math notranslate nohighlight">
+\[
+v^2\sim {GM\over b}.
+\]</div>
+<p>Depending on the velocity, the effective size of the star can be orders of magnitude larger than its physical size:</p>
+<div class="math notranslate nohighlight">
+\[
+b\sim 2000\ R_\odot\ \left({M\over M_\odot}\right)\left({v\over 10\ \mathrm{km\ s^{-1}}}\right)^{-2}.
+\]</div>
+<p>The accretion rate is</p>
+<div class="math notranslate nohighlight">
+\[
+\dot M\sim {\pi \rho (GM)^2\over v^3}\approx 10^{11}\ \mathrm{g\ s^{-1}}\ \left({M\over M_\odot}\right)^2\left({n\over \mathrm{cm^{-3}}}\right)\left({10\ \mathrm{km}\over v}\right)^3,
+\]</div>
+<p>where the density is scaled to a typical mean interstellar medium density <span class="math notranslate nohighlight">\(\sim 1\ \mathrm{cm^{-3}}\)</span>. This is a small accretion rate – <span class="math notranslate nohighlight">\(10^{11}\ {\rm g\ s^{-1}}\)</span> corresponds to <span class="math notranslate nohighlight">\(\approx 10^{-15}\ M_\odot\ \mathrm{yr}^{-1}\)</span>, so the mass added to the star is negligible and equation (\ref{eq:Laccr}) gives a low luminosity <span class="math notranslate nohighlight">\(\sim 10^{31}\ {\rm erg\ s^{-1}}\)</span> (about <span class="math notranslate nohighlight">\(10^7\)</span> times smaller than the Eddington luminosity).</p>
+<p>The same scalings apply to spherical accretion from a uniform medium, but with the velocity <span class="math notranslate nohighlight">\(v\)</span> replaced by the sound speed <span class="math notranslate nohighlight">\(c_s\)</span>. The capture radius is then given by the <em>Bondi radius</em> <span class="math notranslate nohighlight">\(R_B=GM/2c_s^2\)</span>. The sound speed is</p>
+<div class="math notranslate nohighlight">
+\[
+c_s\approx \left({k_BT\over m_p}\right)^{1/2}=9\ \mathrm{km\ s^{-1}}\ \left({T\over 10^4\ \mathrm{K}}\right)^{1/2}
+\]</div>
+<p>giving</p>
+<div class="math notranslate nohighlight">
+\[
+R_B = {GM\over 2c_s^2}\approx 1150\, R_\odot\ \left({M\over M_\odot}\right)\left({T\over 10^4\ \mathrm{K}}\right)^{-1}
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\dot M\sim 10^{11}\ \mathrm{g\ s^{-1}}\ \left({M\over M_\odot}\right)^2\left({n\over \mathrm{cm^{-3}}}\right)\left({T\over 10^4\ \mathrm{K}}\right)^{-3/2}.
+\]</div>
+<p>As an example, the hot gas near Sgr A<span class="math notranslate nohighlight">\(^\star\)</span> has <span class="math notranslate nohighlight">\(T\approx 2\times 10^7\ {\rm K}\)</span> and <span class="math notranslate nohighlight">\(n\sim 100\ {\rm cm^{-3}}\)</span> (e.g. see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1999ApJ...517L.101Q/abstract">Quataert et al. 1999</a> and <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2001Natur.413...45B/abstract">Baganoff et al. 2001</a>. With <span class="math notranslate nohighlight">\(M=2.4\times 10^6\ M_\odot\)</span>, this gives <span class="math notranslate nohighlight">\(\dot M\sim 10^{21}\ {\rm g\ s^{-1}}\sim 10^{-5}\ M_\odot\ \mathrm{yr}^{-1}\)</span>.</p>
+</section>
+<section id="thin-accretion-disk">
+<h2>Thin accretion disk<a class="headerlink" href="#thin-accretion-disk" title="Permalink to this heading">#</a></h2>
+<p>Often the incoming gas has too much angular momentum to accrete straight onto the star. The accreting gas settles into a rotating flow in which viscous processes act to transport angular momentum outwards, allowing the gas to accrete.</p>
+<p>The classic example is the <strong>thin disk</strong> that forms when gas is able to cool efficiently, ie.~it can lose energy much faster than angular momentum. The accreting gas then settles into a disk surrounding the central object. Viscosity acts to spin up the outer part of the disk relative to the inner part, removing angular momentum from the inner part, which falls inwards and releases gravitational energy.</p>
+<p>The detailed equations that describe the evolution of a thin disk can be found in the review by <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1981ARA%26A..19..137P/abstract">Pringle 1977</a>. Here we’ll focus on the main physical ideas and derive the main results at the back of the envelope level:</p>
+<ul class="simple">
+<li><p><strong>Keplerian orbits</strong>. The main assumption is that particles in the disk are on Keplerian orbits</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\Omega^2 = {GM\over r^3}
+\]</div>
+<p>which means that the velocity decreases outwards. Viscosity tries to reduce the differential rotation which then transports angular momentum outwards.</p>
+<ul class="simple">
+<li><p><strong>Vertical structure</strong>. For small disk masses, the gravity from the central star dominates. The vertical component is</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+g_z = {GM\over r^2}{z\over r}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> is the midplane distance from the central star, and <span class="math notranslate nohighlight">\(z\)</span> is the vertical distance from the midplane (i.e.~cylindrical coordinates). Hydrostatic balance in the vertical direction <span class="math notranslate nohighlight">\(\partial P/\partial z=\rho g_z\)</span> then implies that the midplane pressure is</p>
+<div class="math notranslate nohighlight">
+\[
+P\approx {GM\over r^2}{H\over r}\Sigma = {GM\over r^3} H^2 \langle\rho\rangle,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(H\)</span> is the characteristic disk thickness, <span class="math notranslate nohighlight">\(\Sigma\)</span> is the column density (mass per unit area) in the disk, and the mean density is <span class="math notranslate nohighlight">\(\langle\rho\rangle\approx \Sigma/H\)</span>. Since the sound speed is given by <span class="math notranslate nohighlight">\(c_s^2\approx P/\langle\rho\rangle\)</span>, we have the result</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{c_s = \Omega H}.
+\]</div>
+<p>This result encapsulates the vertical hydrostatic balance. It implies that</p>
+<div class="math notranslate nohighlight">
+\[
+{c_s\over v_{\rm Kep}} = {c_s\over \Omega r} = {H\over r}&lt; 1
+\]</div>
+<p>(the disk is thin), showing that the Keplerian motion is supersonic.</p>
+<ul class="simple">
+<li><p><strong>Surface temperature</strong>. If the disk radiates as a blackbody and is accreting steadily, then we could write an equation for energy conservation at a radius <span class="math notranslate nohighlight">\(r\)</span> as</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+2\times \sigma_{SB}T_\mathrm{eff}^4 \times 2\pi r dr = {GM\dot M\over 2r^2} dr,
+\]</div>
+<p>where the factor of 2 on the LHS comes from the two sides of the disk, and the RHS is the rate of release of gravitational energy as mass moves from radius <span class="math notranslate nohighlight">\(r+dr\)</span> to <span class="math notranslate nohighlight">\(r\)</span> — recall that the energy of a Keplerian orbit (gravitational plus kinetic) is <span class="math notranslate nohighlight">\(-GM/2r\)</span> per unit mass.</p>
+<p>In fact, there is also energy released in the form of viscous dissipation in the disk, which turns out to be twice as large as the energy from the changing orbit, giving a factor of 3 on the RHS\footnote{The viscous heating rate per unit volume is <span class="math notranslate nohighlight">\(\Sigma\nu(dv_\mathrm{Kep}/dr)^2\sim \Sigma \nu \Omega^2\)</span>. In the innermost part of the disk, the profile deviates from Keplerian and the dissipation is actually smaller than the RHS of eq.~(\ref{eq:energy}), as needed so that overall energy is released in the disk at a rate <span class="math notranslate nohighlight">\(GM\dot M/2R\)</span>.}.
+Inserting the correct prefactor, we get the temperature profile of the disk</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{T_\mathrm{eff} = \left({3GM\dot M\over 8\pi r^3 \sigma_{SB}}\right)^{1/4}\propto {1\over r^{3/4}}}
+\]</div>
+<ul class="simple">
+<li><p><strong>Viscous time</strong>. In the fluid momentum equation, the viscous term looks like <span class="math notranslate nohighlight">\(\nu \nabla^2\vec{u}\)</span>, so that the characteristic viscous timescale is given by</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+t_\mathrm{visc}\approx {r^2\over \nu}
+\]</div>
+<p>(the velocity varies on a lengthscale <span class="math notranslate nohighlight">\(\sim r\)</span>).</p>
+<p>The source of viscosity in disks was a puzzle for a long time! Microscopic viscosity is much too small to reproduce observed accretion rates in disks. Shakura and Sunyaev introduced the famous <span class="math notranslate nohighlight">\(\alpha\)</span>-prescription for viscosity, writing</p>
+<div class="math notranslate nohighlight">
+\[
+\nu \equiv \alpha c_s H
+\]</div>
+<p>where the viscosity is written in terms of the sound speed and disk thickness. Since these set the maximal scales for velocity and length in the disk, we expect to have <span class="math notranslate nohighlight">\(\alpha&lt;1\)</span>.</p>
+<p>The viscous time is therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{t_\mathrm{visc}\approx {r^2\over \nu} = {r^2\over \alpha c_s H} = \alpha^{-1} \Omega^{-1} \left({r\over H}\right)^2,}
+\]</div>
+<p>much greater than the orbital timescale <span class="math notranslate nohighlight">\(\Omega^{-1}\)</span>.</p>
+<p>The radial flow speed is</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{v_r\approx {r\over t_\mathrm{visc}} \approx \alpha c_s \left({H\over r}\right) \ll c_s.}
+\]</div>
+<p>We can use this to estimate the accretion rate</p>
+<div class="math notranslate nohighlight">
+\[
+\dot M\approx 2\pi r H \rho v_r \approx 2\pi \Sigma \nu.
+\]</div>
+<p>In fact, the real calculation gives</p>
+<div class="math notranslate nohighlight">
+\[
+{\dot M\over 3\pi}\left[1-\left({R_\star\over r}\right)^{1/2}\right] = \nu \Sigma.
+\]</div>
+<p>In the outer parts of the disk where <span class="math notranslate nohighlight">\(r\gg R_{\star}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\dot M \approx 3\pi \nu \Sigma}
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the theory, correction terms like the one in square brackets appear in many of the equations – they are important near the star, where the flow begins to deviate from Keplerian as it joins onto the star. For example, as mentioned in the footnote on the previous page, the local flux near the star is suppressed relative to the outer parts of the disk. For more details see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1981ARA%26A..19..137P/abstract">Pringle 1977</a>.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Shape of the disk</strong>. The sound speed <span class="math notranslate nohighlight">\(c_s\propto T^{1/2}\)</span>. For an optically-thin disk where the midplane temperature is the same as the surface temperature, then</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+c_s\propto T^{1/2}\propto r^{-3/8}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\Rightarrow {H\over r} \approx {c_s\over \Omega r}\propto r^{1/8}
+\]</div>
+<p>The disk flares slightly (<span class="math notranslate nohighlight">\(H/R\)</span> increases outwards). If the disk is optically-thick in the vertical direction, with optical depth <span class="math notranslate nohighlight">\(\tau\gg 1\)</span>, then <span class="math notranslate nohighlight">\(T^4\approx \tau T^4_\mathrm{eff}\)</span>. We then need to use the opacity of the disk material to calculate <span class="math notranslate nohighlight">\(\tau\)</span>. You’ll do this in the numerical exercise this week.</p>
+</section>
+<section id="accretion-onto-a-magnetized-star">
+<h2>Accretion onto a magnetized star<a class="headerlink" href="#accretion-onto-a-magnetized-star" title="Permalink to this heading">#</a></h2>
+<p>The accretion flow near a star which is strongly-magnetized can be disrupted by the magnetic field. The flow is then channelled by the magnetic field onto the magnetic polar caps of the star.</p>
+<p>To estimate when this happens, we can compare the magnetic pressure</p>
+<div class="math notranslate nohighlight">
+\[
+{B^2\over 8\pi} = {B_\star^2\over 8\pi}\left({R_\star\over r}\right)^6\propto {1\over r^6}
+\]</div>
+<p>to the ram pressure in the accretion flow</p>
+<div class="math notranslate nohighlight">
+\[
+\rho v^2\approx {\dot M\over 4\pi r^2 v} v^2 = {\dot M\over 4\pi r^2}\left({2GM\over r}\right)^{1/2}\propto {1\over r^{5/2}}.
+\]</div>
+<p>Here we take the magnetic field of the star to be a dipole, giving <span class="math notranslate nohighlight">\(B=B_\star (R_\star/r)^3\)</span> (higher order multipoles fall off more quickly with <span class="math notranslate nohighlight">\(r\)</span>, so usually the dipole component is the relevant one). We’ve also used the relation <span class="math notranslate nohighlight">\(\dot M = 4\pi r^2 \rho v\)</span> for a steady accretion flow and taken the velocity to be the free-fall velocity, giving <span class="math notranslate nohighlight">\(v^2\sim 2GM/r\)</span>.</p>
+<p>This shows that magnetic pressure grows more quickly with decreasing <span class="math notranslate nohighlight">\(r\)</span> than the ram pressure. At a distance <span class="math notranslate nohighlight">\(r&lt;r_M\)</span>, the flow becomes magnetically-channelled, where <span class="math notranslate nohighlight">\(r_M\)</span> is the radial distance where magnetic and ram pressures are equal,</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{r_M = \left(B_\star^2R_\star^6\over 2\dot M(2GM)^{1/2}\right)^{2/7} = 5\times 10^8\ {\rm cm}\ \mu_{30}^{4/7}\dot M_{16}^{-2/7}\left({M\over M_\odot}\right)^{-1/7}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mu_{30}\)</span> is the dipole moment <span class="math notranslate nohighlight">\(B_\star R_\star^3\)</span> in units of <span class="math notranslate nohighlight">\(10^{30}\ {\rm G\ cm^3}\)</span>, and <span class="math notranslate nohighlight">\(\dot M_{16}\)</span> is the accretion rate in units of <span class="math notranslate nohighlight">\(10^{16}\ {\rm g\ s^{-1}}\)</span>. This value of dipole moment corresponds to a neutron star with a magnetic field of <span class="math notranslate nohighlight">\(\sim 10^{12}\ {\rm G}\)</span> or a white dwarf with a magnetic field of <span class="math notranslate nohighlight">\(\sim 10^3\ {\rm G}\)</span>.</p>
+<p>In fact, we need to balance the magnetic torque with the viscous torque to find <span class="math notranslate nohighlight">\(r_M\)</span> for disk accretion, but the answer is about the same (and has the same scalings). For a famous treatment of the disk case, you can look at <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1978ApJ...223L..83G/abstract">Ghosh &amp; Lamb 1978</a> and their follow up papers. This figure from their paper shows the accretion geometry:</p>
+<p><img alt="GhoshLamb" src="_images/GhoshLamb.png" /></p>
+<p>The accretion disk is terminated near <span class="math notranslate nohighlight">\(r_M\)</span>, and the matter funnelled onto the magnetic polar cap. The size of the polar cap is generally very small. For a rotation-aligned dipole field, <span class="math notranslate nohighlight">\(\sin^2\theta/r\)</span> is constant along a magnetic field line, so the polar cap angle is <span class="math notranslate nohighlight">\(\approx (R_\star/r_M)^{1/2}\)</span>.</p>
+<p>Rotation of the star produces pulsations in the observed emission. There are a few types of observed systems involving accretion onto a neutron star or white dwarf in a close binary. <em>X-ray pulsars</em> are accreting neutron stars with <span class="math notranslate nohighlight">\(B\sim 10^{12}\ {\rm G}\)</span> and <span class="math notranslate nohighlight">\(P_{\rm spin}\sim 0.1\)</span>–<span class="math notranslate nohighlight">\(1000\ {\rm s}\)</span>, while the <em>accreting millisecond X-ray pulsars</em> are accreting neutron stars with <span class="math notranslate nohighlight">\(B\sim 10^{9}\ {\rm G}\)</span> and <span class="math notranslate nohighlight">\(P_{\rm spin}\sim\)</span>~few~ms. The <em>AM Her</em> systems are accreting white dwarfs with <span class="math notranslate nohighlight">\(B\sim 10^{7}\)</span>–few<span class="math notranslate nohighlight">\(\times 10^8\ {\rm G}\)</span> and <span class="math notranslate nohighlight">\(P_{\rm spin}\approx P_{\rm orb}\)</span> (the magnetic field is strong enough that no disk forms because <span class="math notranslate nohighlight">\(r_M&gt;a\)</span> where <span class="math notranslate nohighlight">\(a\)</span> is the orbital separation!). The <em>intermediate polars</em> are more weakly-magnetized white dwarfs with <span class="math notranslate nohighlight">\(B\sim 10^{5}\)</span>–<span class="math notranslate nohighlight">\(10^7\ {\rm G}\)</span> and spin periods of tens of seconds to hours.</p>
+</section>
+<section id="some-things-we-didn-t-talk-about">
+<h2>Some things we didn’t talk about<a class="headerlink" href="#some-things-we-didn-t-talk-about" title="Permalink to this heading">#</a></h2>
+<p>Here are some things that we didn’t talk about that could be good project ideas. I’ve included some references that you could use as a starting point (for the older ones take a look at their citations to find more recent papers).</p>
+<ul class="simple">
+<li><p><strong>Magneto-rotational instability</strong>. The source of viscosity in disks was a mystery for many years. Models relied on the <span class="math notranslate nohighlight">\(\alpha\)</span>-prescription that parametrizes the turbulent viscosity. Simulations of magnetized disks show that the magneto-rotational instability (MRI) generates turbulence and transports angular momentum outwards at a fast enough rate to explain observed systems.
+Recent paper with a 3D global disk simulation: <a class="reference external" href="https://arxiv.org/abs/2301.12679">Huang et al. (2023)</a>.</p></li>
+<li><p><strong>Observations of the thin disk spectrum</strong>. The predicted <span class="math notranslate nohighlight">\(\nu^{1/3}\)</span> spectrum can be tested observationally using eclipse mapping of disks, e.g. <a class="reference external" href="https://link.springer.com/chapter/10.1007/3-540-45339-3_23">Baptista (2001)</a>.</p></li>
+<li><p><strong>Thermal instabilities in disks</strong>. In the numerical exercise, you found that the equations that describe the evolution of thin disks have time-dependent solutions. This can be understood as a thermal instability characterized by a S-shaped equilibrium <span class="math notranslate nohighlight">\(\Sigma(T)\)</span> curve. <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2018A%26A...617A..26D/abstract">Dubus et al. 2018</a> is an example of an attempt to explain observations of accretion outbursts with the thermal instability model. For a review see <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1387647301001129?casa_token=P6Wk44j3jN0AAAAA:xP_PqBfMDF-I7uvXhGlSNsqjlIuyMI7L5gCMKikz6UgYFKBka24wdwM98_U2lmHqjF4O65iVBw">Lasota 2001</a>.</p></li>
+<li><p><strong>Irradiated disks</strong>. Irradiation of the disk by the central star changes the temperature profile as a function of radius and also changes the shape (<span class="math notranslate nohighlight">\(H/r\)</span> profile) of the disk (e.g. <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1997ApJ...490..368C/abstract">Chiang &amp; Goldreich 1997</a>). If the irradiation can maintain high temperatures <span class="math notranslate nohighlight">\(\gtrsim 10^4\ {\rm K}\)</span> in the disk then the thermal instability can be quenched, which leads to transient accretion being more likely in black hole systems compared to neutron stars for example (e.g. <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2001ASPC..229..433K/abstract">King 2001</a>).</p></li>
+<li><p><strong>Boundary layers</strong>. The boundary layer is the region where the accretion disk joins the star and the rotation profile has to change from Keplerian <span class="math notranslate nohighlight">\(\Omega\propto r^{-3/2}\)</span> to solid body <span class="math notranslate nohighlight">\(\Omega\propto r\)</span> at the stellar spin frequency. There are interesting questions about how angular momentum is transported in the boundary as well as how the accreted material spreads over the surface of the star. E.g. <a class="reference external" href="https://www.nature.com/articles/362820a0">Narayan &amp; Popham 1993</a>, <a class="reference external" href="https://iopscience.iop.org/article/10.1088/0004-637X/770/1/67/meta">Belyaev et al. (2013)</a>.</p></li>
+<li><p><strong>Geometrically-thick accretion flows</strong>. There are a few different models for the structure of radiatively-inefficient accretion flows, for example the Advection-dominated Accretion Flow or ADAF, and the expected radiation spectrum from such flows. Accreting sources usually show different spectral states that cna be attributed to different accretion geometries at different accretion rates. E.g. <a class="reference external" href="https://iopscience.iop.org/article/10.1086/320465/meta">Ball et al. (2001)</a>, <a class="reference external" href="https://iopscience.iop.org/article/10.1086/304829/meta">Esin et al. (1991)</a>.</p></li>
+<li><p><strong>Ultra-luminous X-ray sources</strong> (ULXs) — a relatively new class of source, these are thought to be compact objects accreting at super-Eddington rates, e.g. see <a class="reference external" href="https://arxiv.org/abs/2302.00006">Pinto &amp; Walton (2023)</a>.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="radiation_notes.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Electromagnetic radiation mechanisms</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="exercise1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Space-based high energy observatories</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-efficiency-of-accretion">The efficiency of accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bondi-accretion">Bondi accretion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thin-accretion-disk">Thin accretion disk</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#accretion-onto-a-magnetized-star">Accretion onto a magnetized star</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#some-things-we-didn-t-talk-about">Some things we didn’t talk about</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

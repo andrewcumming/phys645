@@ -1,0 +1,721 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Electromagnetic radiation mechanisms &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'radiation_notes';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Accretion in high energy astrophysics" href="accretion_notes.html" />
+    <link rel="prev" title="Overview of high energy astrophysics" href="overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_notes.html">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binaries.html">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compact.html">Compact object interiors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise7.html">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fradiation_notes.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/radiation_notes.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Electromagnetic radiation mechanisms</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-radiation">Thermal radiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planck-spectrum-from-optically-thick-gas">Planck spectrum from optically-thick gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bremsstrahlung-from-optically-thin-gas">Bremsstrahlung from optically-thin gas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-thermal-radiation">Non-thermal radiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchrotron">Synchrotron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverse-compton-scattering">Inverse Compton scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchrotron-self-compton">Synchrotron self-Compton</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-emission">Line emission</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-lines-in-x-ray">Atomic lines in X-ray</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ionization-states">Ionization states</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-examples-of-lines">Some examples of lines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyclotron-lines">Cyclotron lines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-positron-annhilation">Electron-positron annhilation</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="electromagnetic-radiation-mechanisms">
+<h1>Electromagnetic radiation mechanisms<a class="headerlink" href="#electromagnetic-radiation-mechanisms" title="Permalink to this heading">#</a></h1>
+<p>These notes summarize important results for electromagnetic emission at high energies. The goal is to gain an overview of the different electromagnetic radiation mechanisms that are important in High Energy Astrophysics. Rather than look at the detailed derivation of each mechanism, we want to understand the general characteristics – the photon spectrum, characteristic energies and other properties of the radiation, as well as what we can learn from the spectrum. If you want some more detail on the radiative processes, you could look at Rybicki &amp; Lightman (the classic book on this) or at my <a class="reference external" href="https://www.physics.mcgill.ca/~cumming/teaching/642/phys642_all_notes.pdf">notes for PHYS 642</a>. We’ll split the processes into three groups - thermal radiation, non-thermal radiation, and spectral lines.</p>
+<section id="thermal-radiation">
+<h2>Thermal radiation<a class="headerlink" href="#thermal-radiation" title="Permalink to this heading">#</a></h2>
+<p>By thermal radiation, we mean radiation from gas in local thermodynamic equilibrium (LTE). LTE means that there is a well-defined temperature <span class="math notranslate nohighlight">\(T\)</span> such that the velocities of the gas particles follow a Maxwell-Boltzmann distribution and the population of atomic levels follows a Boltzmann distribution <span class="math notranslate nohighlight">\(\propto e^{-E/k_BT}\)</span> etc. There are two possibilities for the spectrum, depending on whether the gas is optically thick or optically thin.</p>
+<section id="planck-spectrum-from-optically-thick-gas">
+<h3>Planck spectrum from optically-thick gas<a class="headerlink" href="#planck-spectrum-from-optically-thick-gas" title="Permalink to this heading">#</a></h3>
+<p>If the source is optically thick, photons interact many times with gas particles before leaving the source. The photon distribution then comes into thermal equilibrium at the same temperature as the gas. The spectrum is a blackbody or Planck spectrum:</p>
+<div class="math notranslate nohighlight">
+\[
+B_\nu(T)={2h\nu^3\over c^2}{1\over e^{h\nu/k_BT}-1}
+\]</div>
+<p>(units: <span class="math notranslate nohighlight">\(\mathrm{erg\ cm^{-2}\ s^{-1}\ Hz^{-1}\ sterad^{-1}}\)</span>).
+Important limits are Rayleigh-Jeans at low frequency</p>
+<div class="math notranslate nohighlight">
+\[
+B_\nu={2\nu^2\over c^2}k_BT\propto \nu^2,
+\]</div>
+<p>and the Wien tail at high frequency</p>
+<div class="math notranslate nohighlight">
+\[
+B_\nu={2h\nu^3\over c^2}\exp\left({-h\nu\over k_BT}\right).
+\]</div>
+<p>The peak of <span class="math notranslate nohighlight">\(B_\nu\)</span> is at <span class="math notranslate nohighlight">\(h\nu_{\rm max}=2.28 k_BT\)</span> (the Wien displacement law), or <span class="math notranslate nohighlight">\(\nu_{\rm max}/T=5.88\times 10^{10}\ {\rm Hz\ K^{-1}}\)</span>. The peak of <span class="math notranslate nohighlight">\(B_\lambda\)</span> is given by <span class="math notranslate nohighlight">\(\lambda_{\rm max}T=0.290\ {\rm cm\ K}\)</span>.</p>
+<p>An important point is that the emission is a monotonically increasing function of temperature at all wavelengths, ie.</p>
+<div class="math notranslate nohighlight">
+\[
+\left.{\partial B_\nu(T)\over \partial T}\right|_\nu&gt;0.
+\]</div>
+<p>While it might seem that going to a lower temperature would be the best way to make more low energy photons, in fact if we want more photons then we should go to higher temperature no matter what wavelength we are interested in.</p>
+<p>Integrating over the spectrum (<span class="math notranslate nohighlight">\(F = 2\pi\int_0^1 d\mu\, \mu \int d\nu\, B_\nu\)</span>) gives the total flux</p>
+<div class="math notranslate nohighlight">
+\[
+F=\pi B={1\over 4}acT^4=\sigma_{SB}T^4
+\]</div>
+<p>where the Stefan-Boltzmann constant is <span class="math notranslate nohighlight">\(\sigma_{SB}=5.67\times 10^{-5}\ {\rm cgs}\)</span> and the radiation constant is <span class="math notranslate nohighlight">\(a=7.5657\times 10^{-15}\ {\rm cgs}\)</span>.</p>
+<p>It is important to note that although broadly similar to a Planck spectrum, stellar atmospheres usually show significant deviations, absorption lines being a common example. An important correction for neutron stars is the effect of scattering. In a scattering-dominated atmosphere, the photons are created at a thermalization depth which is significantly deeper than the photosphere, and they scatter multiple times before reaching the photosphere and escaping from the atmosphere. If <span class="math notranslate nohighlight">\(\ell_a\)</span> is the absorption mean free path and <span class="math notranslate nohighlight">\(\ell_s\)</span> is the scattering mean free path, you can show the thermalization depth is <span class="math notranslate nohighlight">\(\sqrt{\ell_a\ell_s}\)</span> (the geometric mean of the two; the square root is because the scattering photons do a random walk). In this case, the spectrum is a “modified blackbody” <span class="math notranslate nohighlight">\(\sqrt{\epsilon_\nu}B_\nu\)</span> where <span class="math notranslate nohighlight">\(\epsilon_\nu\approx \ell_s/\ell_a\ll 1\)</span> is the probability of absorption (rather than scattering) at frequency~<span class="math notranslate nohighlight">\(\nu\)</span> (see for example, Rybicki &amp; Lightman end of section 1.8). The emissivity is reduced because the photons we see were created in a depth <span class="math notranslate nohighlight">\(\sqrt{\ell_a\ell_s}&lt;\ell_a\)</span> rather than a depth <span class="math notranslate nohighlight">\(\ell_a\)</span> for an atmosphere dominated by absorption opacity.</p>
+</section>
+<section id="bremsstrahlung-from-optically-thin-gas">
+<h3>Bremsstrahlung from optically-thin gas<a class="headerlink" href="#bremsstrahlung-from-optically-thin-gas" title="Permalink to this heading">#</a></h3>
+<p>In optically-thin gas, photons leave before interacting with the gas, so we see the radiation spectrum resulting from individual Coulomb scatterings of electrons with ions in the plasma. The radiation is very peaked in time, because the acceleration of the electron is much stronger when the electron is at its closest approach to the nucleus. The width of the pulse is <span class="math notranslate nohighlight">\(\sim b/v\)</span>, where <span class="math notranslate nohighlight">\(v\)</span> is the particle velocity and <span class="math notranslate nohighlight">\(b\)</span> is the impact parameter of the collision. <strong>The spectrum is therefore very broad (narrow in time <span class="math notranslate nohighlight">\(\rightarrow\)</span> broad in frequency space), but with a cutoff at high frequency.</strong></p>
+<p>The total spectrum is obtained by integrating over impact parameters and particle velocities (Maxwell-Boltzmann distribution). The resulting emissivity as a function of frequency is</p>
+<div class="math notranslate nohighlight">
+\[
+\epsilon_\nu^{ff}=6.8\times 10^{-38}\ {\rm erg\ s^{-1}\ cm^{-3}\ Hz^{-1}}\ Z^2n_en_iT^{-1/2}e^{-h\nu/k_BT}\bar{g}_{ff},
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\bar{g}_{ff}\)</span> is the <em>thermally-averaged Gaunt factor</em> (typically of order unity). For <span class="math notranslate nohighlight">\(h\nu\ll k_BT\)</span>, the emissivity is independent of frequency (“flat spectrum”) but decays rapidly as <span class="math notranslate nohighlight">\(e^{-h\nu/k_BT}\)</span> at high frequencies. The spectrum is not completely flat at low frequencies, there is a small slope set by the frequency dependence of the Gaunt factor.</p>
+<p>The total power per unit volume is <span class="math notranslate nohighlight">\(\int d\nu\, \epsilon^{ff}_\nu\)</span>, which gives</p>
+<div class="math notranslate nohighlight">
+\[
+\epsilon^{ff}=1.4\times 10^{-27}\ {\rm erg\ s^{-1}\ cm^{-3}}\ T^{1/2}n_en_iZ^2\bar{g}_B,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\bar{g}_B(T)\)</span> is the thermally-averaged and frequency-averaged Gaunt factor.</p>
+<p>A canonical example of thermal bremsstrahlung is X-ray emission from hot gas in Galaxy clusters. By measuring the cutoff in the X-ray spectrum as a function of the distance from the centre of the cluster, the temperature profile of the cluster can be determined.</p>
+<p>A really important concept is the idea of <strong>self-absorption</strong>. For every emission process, there is a corresponding absorption process. For a thermal gas this is given by Kirchoff’s law <span class="math notranslate nohighlight">\(j_\nu = \epsilon_\nu/4\pi  = \alpha_\nu B_\nu = \rho \kappa_\nu B_\nu\)</span> which relates the emissivity <span class="math notranslate nohighlight">\(j_\nu\)</span> to the absorption opacity <span class="math notranslate nohighlight">\(\kappa_\nu\)</span>. (The argument is that this relation must hold frequency-by-frequency so that in a blackbody enclosure the radiation is the same as the radiation emitted, maintaining equilibrium). In the case of Bremsstrahliung, the absorption process is called <strong>free-free absorption</strong>, with opacity <span class="math notranslate nohighlight">\(\kappa_{ff}\propto 1/\nu^2\)</span>.
+At low enough frequencies, the absorption opacity becomes large enough that the source is optically-thick to those photons, and so the spectrum is a Rayleigh Jeans spectrum <span class="math notranslate nohighlight">\(\propto \nu^2\)</span> at the lowest frequencies.
+\end{itemize}</p>
+<p><img alt="Planck spectrum" src="_images/planck.pdf" /></p>
+<p><img alt="Bremsstrahlung spectrum" src="_images/bremss.pdf" /></p>
+</section>
+</section>
+<section id="non-thermal-radiation">
+<h2>Non-thermal radiation<a class="headerlink" href="#non-thermal-radiation" title="Permalink to this heading">#</a></h2>
+<p>Here we are dealing with a population of electrons that do not have a well-defined temperature, i.e. they have an energy distribution which is not Maxwell-Boltzmann but something else. Often it is assumed that the energy distribution is a power law,
+<span class="math notranslate nohighlight">\(N(E)dE\propto E^{-p}dE\)</span>. We’ll see later that particle acceleration mechanisms naturally lead to power law energy distributions.</p>
+<section id="synchrotron">
+<h3>Synchrotron<a class="headerlink" href="#synchrotron" title="Permalink to this heading">#</a></h3>
+<p>Synchrotron radiation is from relativistic electrons moving in a magnetic field. The electrons orbit the magnetic field with the relativistic gyrofrequency <span class="math notranslate nohighlight">\(\omega_B = eB/\gamma m_ec\)</span>, but the emission is strongly beamed into a cone of opening angle <span class="math notranslate nohighlight">\(\sim 1/\gamma\)</span>, so it is like a lighthouse beam pointing in our line of sight for a short time each orbit. Added to this is the kinematic effect that the electron is moving almost at the same speed as the photons it emits, which further shortens the pulse. The radiation that we see is a very short pulse once an orbit with a duration <span class="math notranslate nohighlight">\(\sim 1/(\gamma^3\omega_B)\)</span>.</p>
+<p>The characteristic frequency of the radiation is</p>
+<div class="math notranslate nohighlight">
+\[
+\omega_c={3\over 2}\gamma^3\omega_B= {3\over 2}\gamma^2 {eB\over m_ec}\rightarrow \nu_c=2.8\ \mathrm{MHz}\ \gamma^2\left({B\over \mathrm{G}}\right).
+\]</div>
+<p>Radiation from a single electron gives a broad spectrum <span class="math notranslate nohighlight">\(\propto \nu^{1/3}\)</span> at low frequency, peaking at and falling off exponentially <span class="math notranslate nohighlight">\(\nu^{1/2}\exp(-\omega/\omega_c)\)</span> at high frequency.</p>
+<p>For a power law distribution of electrons,</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{F_\nu\propto B^{(p+1)/2}\nu^{-(p-1)/2}}
+\]</div>
+<p>At low frequency, self-absorption becomes important as for Bremsstrahlung. There is a similar kind of argument to relate the absorption coefficient to the emissivity, except that we can’t use Kirchoff’s law <span class="math notranslate nohighlight">\(j_\nu=\alpha_\nu B_\nu\)</span> because the electrons have a non-thermal distribution; instead the analysis starts with the Einstein coefficients (e.g. see Rybicki &amp; Lightman). The spectrum is</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{F_\nu\propto \nu^{5/2}}
+\]</div>
+<p>at low frequency.</p>
+<p><img alt="Synchrotron" src="_images/synch.pdf" /></p>
+<p>Important results are the power radiated per electron</p>
+<div class="math notranslate nohighlight">
+\[
+P_S = {4\over 3}\gamma^2\beta^2 \sigma_T c {B^2\over 8\pi},
+\]</div>
+<p>and the associated “cooling time”</p>
+<div class="math notranslate nohighlight">
+\[
+t_\mathrm{cool} = {\gamma m_e c^2\over P_S}=6\times 10^8\ {\rm s}\ B^{-2}\gamma^{-1}.
+\]</div>
+<p>Synchrotron radiation is strongly polarized. Linear polarization predominantly perpendicular to <span class="math notranslate nohighlight">\(\vec{B}\)</span>. Degree of polarization is <span class="math notranslate nohighlight">\((P_\perp-P_\parallel)/(P_\perp+P_\parallel)=(p+1)/(p+7/3)\)</span>.</p>
+<p>Minimum energy argument: you can show that for a collection of particles and fields radiating synchrotron at a certain observed luminosity, the minimum energy is when the energies of particles and fields are approximately equal (equipartition).</p>
+<p>The classic example is radio lobes where jets from AGN terminate. e.g. Cyg A radio galaxy. Size is about 50 kpc and total luminosity about <span class="math notranslate nohighlight">\(10^{45}\ \mathrm{erg\ s^{-1}}\)</span> at radio frequencies of several GHz. Assume typical value <span class="math notranslate nohighlight">\(B\sim 10^{-4}\ {\rm G}\)</span>. With this <span class="math notranslate nohighlight">\(B\)</span> we need <span class="math notranslate nohighlight">\(\gamma^2\sim 10^7\)</span> to get a few GHz frequencies, or <span class="math notranslate nohighlight">\(\gamma\sim 3000\)</span>. Then the power radiated per electron is <span class="math notranslate nohighlight">\(\sim 10^{-16}\ \mathrm{erg\ s^{-1}}\)</span>, <span class="math notranslate nohighlight">\(\rightarrow 10^{61}\)</span> electrons. Number density is then <span class="math notranslate nohighlight">\(10^{-8}\ \mathrm{cm}^{-3}\)</span>.
+Cooling time is <span class="math notranslate nohighlight">\(\sim\)</span> Myr, showing that energy input from the central black hole is needed to maintain the lobes.</p>
+</section>
+<section id="inverse-compton-scattering">
+<h3>Inverse Compton scattering<a class="headerlink" href="#inverse-compton-scattering" title="Permalink to this heading">#</a></h3>
+<p>In inverse Compton scattering, a photon scatters from a fast moving electron, gaining energy and increasing the photon frequency. This is calculated by boosting into the rest frame of the electron, then doing the scattering, and then boosting back to the lab frame again. The two Lorentz transformations introduce a factor of <span class="math notranslate nohighlight">\(\gamma\)</span> each, giving a final photon energy <span class="math notranslate nohighlight">\(\sim \gamma^2\)</span> times the initial photon energy.</p>
+<p>The maximum photon energy after scattering is <span class="math notranslate nohighlight">\(\nu_f=4\gamma^2\nu_i\)</span> (for a head-on collision). For a single electron, the photon number spectrum is flat with a cutoff at the maximum energy. The mean photon energy is <span class="math notranslate nohighlight">\((4/3)\gamma^2\)</span>.</p>
+<p>The electrons scattering the photons could have a thermal or non-thermal energy distribution.
+For a power law distribution of electron energies, the spectrum is <span class="math notranslate nohighlight">\(F_\nu\propto \nu^{-(p-1)/2}\)</span> (same as synchrotron).</p>
+<p>Compton scattering happens from many different types of sources. The cartoon on the next page is from Pozdnyakov, Sobol, and Sunyaev (1983) and shows some of the different sites.</p>
+<p><img alt="Compton sites" src="_images/Comptonsites.pdf" /></p>
+<p>The total power radiated is</p>
+<div class="math notranslate nohighlight">
+\[
+P_C={4\over 3}\gamma^2\beta^2 \sigma_T c U_\gamma,
+\]</div>
+<p>which for thermal non-relativistic electrons gives</p>
+<div class="math notranslate nohighlight">
+\[
+P_C={4k_BT\over m_ec^2}\sigma_T c U_\gamma.
+\]</div>
+<p><strong>Multiple scatterings</strong>: often Compton scattering occurs in environments where multiple scatterings occur (i.e. optically thick to scattering). An important parameter is the <strong>Compton <span class="math notranslate nohighlight">\(y\)</span>-parameter</strong>, which measures whether the Compton scattering will significantly change the energy of the photon. For example, for a thermal gas of non-relativistic electrons, the number of scatterings is <span class="math notranslate nohighlight">\(\tau\)</span> for <span class="math notranslate nohighlight">\(\tau\ll 1\)</span> (optically thin) and <span class="math notranslate nohighlight">\(\tau^2\)</span> for <span class="math notranslate nohighlight">\(\tau\gg 1\)</span> (optically-thick), giving</p>
+<div class="math notranslate nohighlight">
+\[
+y = {4k_BT\over m_ec^2}\mathrm{max}(\tau,\tau^2).
+\]</div>
+<p><strong>Comptonization</strong>. For <span class="math notranslate nohighlight">\(y\gg 1\)</span>, the energies of the photons increase until recoil of the electrons becomes significant, and the spectrum evolves to an equilibrium. For the case where the gas has temperature <span class="math notranslate nohighlight">\(T\)</span>, the resulting spectrum is a <strong>Bose-Einstein distribution</strong> with a non-zero chemical potential <span class="math notranslate nohighlight">\(\mu\)</span> set by the number of photons. (This thermalization process does not give a Planck spectrum because the number of photons is conserved in the scattering process; for a blackbody photons are created or destroyed as needed and <span class="math notranslate nohighlight">\(\mu=0\)</span>). I include a figure from Pozdnyakov, Sobol, and Sunyaev (1983) that shows the evolution of the spectrum as <span class="math notranslate nohighlight">\(y\)</span> increases.</p>
+<p>Multiple scatterings can also give rise to a power law spectrum of photons even when the electrons do not have a power law distribution of energies. Each scattering boosts the energy of the photon by a fixed amount, but each successive scattering has a smaller and smaller probability. The result can be a power law of photon energies, with higher energy photons resulting from a higher number of scatterings.</p>
+</section>
+<section id="synchrotron-self-compton">
+<h3>Synchrotron self-Compton<a class="headerlink" href="#synchrotron-self-compton" title="Permalink to this heading">#</a></h3>
+<p>If  we have a situation in which synchrotron photons are undergoing inverse Compton scattering, it can be possible for the power in inverse Compton to become comparable or try to exceed the synchrotron power supplying the seed photons. The ratio of powers is <span class="math notranslate nohighlight">\(P_C/P_S=U_\gamma/U_B\)</span>, the ratio of the photon and magnetic energy densities. The situation where <span class="math notranslate nohighlight">\(P_C\)</span> exceeds <span class="math notranslate nohighlight">\(P_S\)</span> is known as the ``inverse Compton catastrophe’’, and corresponds to a brightness temperature of <span class="math notranslate nohighlight">\(10^{12}\ {\rm K}\)</span> (e.g. Readhead 1994) above which synchrotron self-Compton can no longer be maintained.</p>
+<p><img alt="Comptonization" src="_images/Comptonization.png" /></p>
+</section>
+</section>
+<section id="line-emission">
+<h2>Line emission<a class="headerlink" href="#line-emission" title="Permalink to this heading">#</a></h2>
+<p>Finally, discuss some of the ways to make spectral lines in X-rays and gamma-rays.</p>
+<section id="atomic-lines-in-x-ray">
+<h3>Atomic lines in X-ray<a class="headerlink" href="#atomic-lines-in-x-ray" title="Permalink to this heading">#</a></h3>
+<p>We noted last time that the atomic energy scale moves into X-ray energies for atoms with enough protons. The example figure from p75 of Seward &amp; Charles shows some X-ray lines from Chandra obervations of stars.</p>
+<p><img alt="Chandra spectra" src="_images/Chandra.png" /></p>
+<p>The H-like ionisation energy is <span class="math notranslate nohighlight">\(13.6\ \mathrm{eV}\ Z^2\)</span>, which is <span class="math notranslate nohighlight">\(0.49\ \mathrm{keV}\)</span> for C, <span class="math notranslate nohighlight">\(0.87\ \mathrm{keV}\)</span> for O, and <span class="math notranslate nohighlight">\(9.2\ \mathrm{keV}\)</span> for Fe. The corresponding wavelength is <span class="math notranslate nohighlight">\(12.4\)</span>~\AA~<span class="math notranslate nohighlight">\((E_\gamma/1\ \mathrm{keV})^{-1}\)</span>.</p>
+</section>
+<section id="ionization-states">
+<h3>Ionization states<a class="headerlink" href="#ionization-states" title="Permalink to this heading">#</a></h3>
+<p>Astronomical notation for ionization states: for hydrogen, HI is neutral hydrogen, HII is singly-ionized hydrogen. This is extended to other elements. For example, OVIII is oxygen ionized 7 times, i.e. 1 electron, or H-like oxygen.
+The ionization state of each element depends on the temperature, there is a nice figure showing this from Seward and Charles book, p14:</p>
+<p><img alt="Ionization equilibrium" src="_images/Ionizationequilibrium.png" /></p>
+</section>
+<section id="some-examples-of-lines">
+<h3>Some examples of lines<a class="headerlink" href="#some-examples-of-lines" title="Permalink to this heading">#</a></h3>
+<p>The OVIII K<span class="math notranslate nohighlight">\(\alpha\)</span> transition (ie. the electron transitions from <span class="math notranslate nohighlight">\(n=1\)</span> to <span class="math notranslate nohighlight">\(n=2\)</span>) has an energy <span class="math notranslate nohighlight">\((3/4)\times 0.87\ \mathrm{keV}\)</span>, which gives <span class="math notranslate nohighlight">\(19\)</span>~\AA\ which matches the energy of this line in the figure.</p>
+<p>He-like ions have triplets (resonance, intercombination, and forbidden lines). You can see this in the Chandra spectra, e.g. in the OXVII lines. Here are two examples of energy levels. The oxygen one is from Gabriel &amp; Jordan (1969), the silicon one is from Wang et al. (2012):</p>
+<p><img alt="He like O" src="_images/He1.png" />
+<img alt="He like Si" src="_images/He2.png" /></p>
+<p>The resonance line corresponds to the <span class="math notranslate nohighlight">\(^1\)</span>P<span class="math notranslate nohighlight">\(_1\rightarrow ^1\)</span>S<span class="math notranslate nohighlight">\(_0\)</span> transition which is an electric dipole transition (orbital angular momentum changes by one unit). The other transitions are not allowed by electric dipole and rely on higher order transitions. The forbidden transition is <span class="math notranslate nohighlight">\(^3\)</span>S<span class="math notranslate nohighlight">\(_1\rightarrow ^1\)</span>S<span class="math notranslate nohighlight">\(_0\)</span>. Collisions can promote an electron from the <span class="math notranslate nohighlight">\(^3\)</span>S<span class="math notranslate nohighlight">\(_1\)</span> level to <span class="math notranslate nohighlight">\(^3\)</span>P<span class="math notranslate nohighlight">\(_1\)</span> which can then decay to give the intercombination line. Because of this, the relative line strengths within the triplet can be used as a measure of density.</p>
+<p>An important emission line from black hole accretion disks is K<span class="math notranslate nohighlight">\(\alpha\)</span>. The line profile is used to constrain the spin of the black hole, since the emission at different wavelengths across the line profile encodes information about the temperature profile, Doppler shifting, and gravitational redshift in the disk. This line is a <em>fluorescence</em> line: X-ray photons from the central source photoionize iron atoms, removing an innermost K shell electron. An electron dropping from <span class="math notranslate nohighlight">\(n=2\)</span> to <span class="math notranslate nohighlight">\(n=1\)</span> then produces the K<span class="math notranslate nohighlight">\(\alpha\)</span> photon.</p>
+</section>
+<section id="cyclotron-lines">
+<h3>Cyclotron lines<a class="headerlink" href="#cyclotron-lines" title="Permalink to this heading">#</a></h3>
+<p>The motion of electrons spirally around magnetic field lines is quantized, with energy level (Landau level) spacing <span class="math notranslate nohighlight">\(\hbar\omega_c=\hbar eB/m_e c=11.6\ {\rm keV}\ (B/10^{12}\ \mathrm{G})\)</span>. In accreting neutron stars with magnetic fields this strong,  the accretion flow is channeled onto the magnetic poles of the neutron star giving rise to an accreting X-ray pulsar.</p>
+<p>Cyclotron lines are often referred to as ``Cyclotron resonance scattering features’’ (CRSFs). they arise when photons are scattered by electrons out of the line of sight. Gravitational redshift from the neutron star surface changes the line energy, and quantum effects can be important since <span class="math notranslate nohighlight">\(B\)</span> is a significant fraction of <span class="math notranslate nohighlight">\(B_\mathrm{QED}=m_e^2c^3/(\hbar e)\approx 4.4\times 10^{13}\ \mathrm{G}\)</span> (the magnetic field where the spacing between Landau levels is equal to the electron rest mass). See Coburn et al. (2006) for a review. Some sources show multiple harmonics. The energy of the observed line depends on the overall accretion rate of the source, which is telling us something about the geometry of the magnetic field and accretion column.</p>
+</section>
+<section id="electron-positron-annhilation">
+<h3>Electron-positron annhilation<a class="headerlink" href="#electron-positron-annhilation" title="Permalink to this heading">#</a></h3>
+<p>If cold enough, electron-positron pairs form a bound state ``positronium’’ (binding energy is a few eV). The singlet state (para-positronium) decays in 0.12 ns to two photons; the triplet state (ortho-positronium) has a longer lifetime (138.6 ns) and decays into 3 photons, so forms a continuum.</p>
+<p>Churazov et al. (2005) reported a strong electron-positron annihilation line from the Galactic bulge seen with INTEGRAL. Here is their Fig. 1 showing the data and the fit with the line (singlet) and continuum (triplet) contributions:</p>
+<p><img alt="Annihilation line" src="_images/annihilationline.png" /></p>
+<p>The origin of the pairs is still not understood. Potential sources are radioactive elements from supernovae, pulsars or accreting black holes, or there could be some contribution from annihilation of dark matter particles. The overall annhilation rate is <span class="math notranslate nohighlight">\(\sim 10^{50}\ e^+\ \mathrm{yr^{-1}}\)</span>. See eg. Siegert et al. 2022 for a recent paper on this.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Question to work on in class: You observe a source in the Galactic centre which has a luminosity approximately the Eddington luminosity for a solar mass. What is the flux received at Earth (in <span class="math notranslate nohighlight">\(\mathrm{erg\ cm^{-2}\ s^{-1}}\)</span>)? Assuming an average photon energy <span class="math notranslate nohighlight">\(\langle E_\gamma\rangle\sim 1\ \mathrm{keV}\)</span>, how many photons would you detect in a kilosecond with a detector with effective area <span class="math notranslate nohighlight">\(100\ \mathrm{cm^2}\)</span>? How far away could you move the source and still be able to detect it?</p>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Overview of high energy astrophysics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="accretion_notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Accretion in high energy astrophysics</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-radiation">Thermal radiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#planck-spectrum-from-optically-thick-gas">Planck spectrum from optically-thick gas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bremsstrahlung-from-optically-thin-gas">Bremsstrahlung from optically-thin gas</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#non-thermal-radiation">Non-thermal radiation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchrotron">Synchrotron</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverse-compton-scattering">Inverse Compton scattering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchrotron-self-compton">Synchrotron self-Compton</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#line-emission">Line emission</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-lines-in-x-ray">Atomic lines in X-ray</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ionization-states">Ionization states</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#some-examples-of-lines">Some examples of lines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyclotron-lines">Cyclotron lines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-positron-annhilation">Electron-positron annhilation</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

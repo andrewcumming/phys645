@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Overview of high energy astrophysics &#8212; Exercises in High Energy Astrophysics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'overview';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Electromagnetic radiation mechanisms" href="radiation_notes.html" />
+    <link rel="prev" title="Exercises in High Energy Astrophysics" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">Exercises in High Energy Astrophysics</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Exercises in High Energy Astrophysics
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview of high energy astrophysics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radiation_notes.html">Electromagnetic radiation mechanisms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_notes.html">Accretion in high energy astrophysics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Exercises</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="exercise1.html">Space-based high energy observatories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise2.html">Photon spectrum of a source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="accretion_questions.html">Questions on accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise3.html">Black hole accretion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise4.html">Time-dependent thin disk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binaries.html">Binary evolution basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise5.html">Binary evolution with MESA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise6.html">Making gravitational wave sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compact.html">Compact object interiors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise7.html">Black hole imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise8.html">Lightcurve of a transient</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise9.html">Power law energy distributions</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="accretion_sols.html">Questions on accretion: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="binary_sols.html">Binary evolution basics: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bhrt.html">Black hole imaging: solutions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerlaw.html">Power law energy distributions: solutions</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Foverview.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/overview.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Overview of high energy astrophysics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-high-energy-astrophysics-and-why-is-it-interesting">What is High Energy Astrophysics and why is it interesting?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-emission-as-a-source-of-high-energy-photons">Thermal emission as a source of high energy photons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optically-thick-source">Optically-thick source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eddington-luminosity">Eddington luminosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optically-thin-source">Optically-thin source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-limits-of-thermal-emission">The limits of thermal emission</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-scales-how-to-get-to-higher-photon-energies">Energy scales; how to get to higher photon energies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-energy-scale">Atomic energy scale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-energy-scale-gamma-rays-and-neutrinos">Nuclear energy scale: gamma-rays and neutrinos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-mass">Rest mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fermi-energy-in-white-dwarf-and-neutron-star-interiors">The Fermi energy in white dwarf and neutron star interiors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relativistic-boosting-inverse-compton-scattering">Relativistic boosting, inverse Compton scattering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="overview-of-high-energy-astrophysics">
+<h1>Overview of high energy astrophysics<a class="headerlink" href="#overview-of-high-energy-astrophysics" title="Permalink to this heading">#</a></h1>
+<p>We start the course by thinking about what physics might be relevant for sources that emit high energy photons and sources in which high energy processes are relevant. This will set us up for the rest of the course by highlighting some questions we will need to address and the kinds of astrophysical sources we should look at. This discussion will also serve to introduce some of the notation and units that we’ll be using.</p>
+<section id="what-is-high-energy-astrophysics-and-why-is-it-interesting">
+<h2>What is High Energy Astrophysics and why is it interesting?<a class="headerlink" href="#what-is-high-energy-astrophysics-and-why-is-it-interesting" title="Permalink to this heading">#</a></h2>
+<p>If you start to look at some of the textbooks, you’ll see that they often begin with some discussion of the scope of high energy astrophysics. Many different types of astrophysical source show high energy emission, for example, the giant planets of our Solar System emit X-rays! Moreover, sources that are traditionally included in high energy astrophysics are often bright at other wavelengths. Classic examples are radio galaxies, discovered with first radio telescopes well before the detection of AGN in X-rays, or radio pulsars, many of which do not have detectable X-ray or gamma-ray emission.</p>
+<p>This fits with the history of the field, which began with the development of multi-wavelength astronomy in the mid-20th century, first with radio telescopes and then later X-ray and gamma-ray observations from space.  Today, high energy astrophysics is at the heart of multi-messenger astronomy involving neutrino and gravitational wave observatories.</p>
+<p>A general definition of High Energy Astrophysics is the study of astronomical sources in which high energy processes play a role. We shall see that leads naturally to extreme environments, with some combination of high densities or temperatures, relativistic velocities or particle energies, high luminosities, rapid variability, or strong gravitational or magnetic fields. This leads to a surprising range of astronomical sources falling under the umbrella of High Energy Astrophysics, from accreting supermassive black holes to radio pulsars, from supernova remnants to galaxy clusters, and more. We want to understand how these sources work and explain observations of them, but also in turn they offer the opportunity to study properties of matter under conditions that cannot be reproduced in laboratories on Earth.</p>
+</section>
+<section id="thermal-emission-as-a-source-of-high-energy-photons">
+<h2>Thermal emission as a source of high energy photons<a class="headerlink" href="#thermal-emission-as-a-source-of-high-energy-photons" title="Permalink to this heading">#</a></h2>
+<p>When would we expect an astrophysical source to emit high energy photons (X-rays or gamma-rays)? Perhaps the simplest place to start is thermal emission, ie.~radiation from a gas in thermal equilibrium at temperature <span class="math notranslate nohighlight">\(T\)</span>.</p>
+<section id="optically-thick-source">
+<h3>Optically-thick source<a class="headerlink" href="#optically-thick-source" title="Permalink to this heading">#</a></h3>
+<p>For an optically-thick source at temperature <span class="math notranslate nohighlight">\(T\)</span>, the photons interact with the plasma many times before they leave and the spectrum is a Planck or blackbody spectrum (<span class="math notranslate nohighlight">\(B_\nu(T)\)</span> or <span class="math notranslate nohighlight">\(B_\lambda(T)\)</span>). The peak of the spectrum is given in terms of <span class="math notranslate nohighlight">\(T\)</span> by</p>
+<div class="math notranslate nohighlight">
+\[
+\nu_\mathrm{max}=5.88\times 10^{10}\ {\rm Hz}\ \left({T\over \mathrm{K}}\right)
+\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda_\mathrm{max} T =0.290\ {\rm cm\ K}
+\]</div>
+<p>(Wien’s displacement law).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that <span class="math notranslate nohighlight">\(\lambda_\mathrm{max}\)</span> is close to but not equal to <span class="math notranslate nohighlight">\(c/\nu_\mathrm{max}\)</span>. Why not?</p>
+</div>
+<p>For example, the Sun has <span class="math notranslate nohighlight">\(T_\mathrm{eff}\approx 5800\ \mathrm{K}\)</span> which gives <span class="math notranslate nohighlight">\(\nu_\mathrm{max}=3\times 10^{14}\ \mathrm{Hz}\)</span> and <span class="math notranslate nohighlight">\(\lambda_\mathrm{max}\approx 5\times 10^{-5}\ \mathrm{cm}\)</span> <span class="math notranslate nohighlight">\(\approx 5000\ \)</span> <span class="math notranslate nohighlight">\(\mathring A\)</span>. If we want X-ray wavelengths, let’s say</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda\sim 1\ \mathring A = 10^{-8}\ \mathrm{cm};\hspace{1cm}  \nu = {c\over\lambda} = 3\times 10^{18}\ \mathrm{Hz},
+\]</div>
+<p>we need</p>
+<div class="math notranslate nohighlight">
+\[
+T\approx 3\times 10^7\ \mathrm{K}
+\]</div>
+<p>or 30 million degrees! This is obviously much larger than the effective temperature of the Sun, in fact it is more like the temperature at the centre of the Sun, which is <span class="math notranslate nohighlight">\(\approx 2\times 10^7\ \mathrm{K}\)</span>. Thermal photons in the centre of the Sun are X-ray photons, but they are at such high density that they can’t escape; we see only the much lower energy photons from the low density regions at the surface (photosphere).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In fact, the Sun <em>is</em> a source of X-rays. The tenuous solar corona consists of <span class="math notranslate nohighlight">\(\sim 10^6\ \mathrm{K}\)</span> gas that is detectable in X-rays. But the X-ray luminosity is a small fraction of the luminosity, <span class="math notranslate nohighlight">\(L_X\sim 10^{-5}\,L_\odot\)</span>.</p>
+</div>
+<p>At high energy, it’s useful to think about temperature in units of eV as well as K. In cgs units, <span class="math notranslate nohighlight">\(1\ \mathrm{eV}=1.6\times 10^{-12}\ \mathrm{erg}\)</span> (where <span class="math notranslate nohighlight">\(1\ \mathrm{erg} = 10^{-7}\ \mathrm{J}\)</span> is the cgs unit of energy). Setting <span class="math notranslate nohighlight">\(k_BT = 1\ \mathrm{eV}\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[
+T = 1.16\times 10^4\ \mathrm{K}\ \left({E\over 1\ \mathrm{eV}}\right) = 1.16\times 10^7\ \mathrm{K}\ \left({E\over 1\ \mathrm{keV}}\right).
+\]</div>
+<p>So the blackbody temperature we need to get X-rays is <span class="math notranslate nohighlight">\(\sim \mathrm{keV}\)</span> (which is another way of saying that the energies of X-ray photons are of order <span class="math notranslate nohighlight">\(\mathrm{keV}\)</span>). Wikipedia gives a range <span class="math notranslate nohighlight">\(\approx 100\ \mathrm{eV}\)</span> to <span class="math notranslate nohighlight">\(\approx 100\ \mathrm{keV}\)</span> for the X-ray band, corresponding to temperatures between <span class="math notranslate nohighlight">\(\approx 10^6\)</span> and <span class="math notranslate nohighlight">\(10^9\ {\rm K}\)</span>.</p>
+<p>A smaller star has to have a higher temperature to emit the same luminosity.
+As a thought experiment, let’s estimate the size of a star with solar luminosity that would emit in X-rays. Using <span class="math notranslate nohighlight">\(L=4\pi R^2\sigma T_\mathrm{eff}^4\)</span> for a blackbody gives</p>
+<div class="math notranslate nohighlight">
+\[
+R=3\ \mathrm{km}\ \left({T_\mathrm{eff}\over 3\times 10^6\ {\rm K}}\right)^{-2}\left({L\over L_\odot}\right)^{1/2}.
+\]</div>
+<p>You might remember that <span class="math notranslate nohighlight">\(3\ \mathrm{km}\)</span> is the Schwarschild radius (<span class="math notranslate nohighlight">\(R_S=2GM/c^2\)</span>) for a solar mass black hole, it’s also not far off a neutron star radius of <span class="math notranslate nohighlight">\(\approx 10\ {\rm km}\)</span>. Young cooling neutron stars have <span class="math notranslate nohighlight">\(L\sim L_\odot\)</span> (<span class="math notranslate nohighlight">\(L\sim 100 L_\odot\)</span> for bright magnetars), and are seen as thermal X-ray emitters. Turning this around, taking radii corresponding to neutron stars or white dwarfs gives</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{NS}\hspace{1cm}R=10\ \mathrm{km}\hspace{1cm}T = 0.13\ \mathrm{keV}\ \left({L\over L_\odot}\right)^{1/4}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{WD}\hspace{1cm}R=10^4\ \mathrm{km}\hspace{1cm}T = 4.1\ \mathrm{eV}\ \left({L\over L_\odot}\right)^{1/4}.
+\]</div>
+<p>This shows that neutron stars should be good sources of thermal X-rays, although white dwarfs with roughly the same radius as Earth already have their emission pushed into the UV/optical range.</p>
+</section>
+<section id="eddington-luminosity">
+<h3>Eddington luminosity<a class="headerlink" href="#eddington-luminosity" title="Permalink to this heading">#</a></h3>
+<p>Since the temperature depends on the luminosity, we should ask how large the luminosity could potentially be. In fact, there is a natural upper limit to luminosity, the Eddington luminosity <span class="math notranslate nohighlight">\(L_\mathrm{Edd}\)</span>. This corresponds to the luminosity where the outwards radiation force on electron begins to exceed the inwards gravitational pull of the star. Assuming the Thomson electron-scattering cross-section <span class="math notranslate nohighlight">\(\sigma_T\)</span> for photon scattering, this balance can be written <span class="math notranslate nohighlight">\(\sigma_T F_\mathrm{Edd}\approx m_p g\)</span>, where <span class="math notranslate nohighlight">\(F_\mathrm{Edd}= L_\mathrm{Edd}/4\pi R^2\)</span> is the radiation flux, giving</p>
+<div class="math notranslate nohighlight">
+\[L_\mathrm{Edd}={4\pi GMm_p\over \sigma_T}=1.26\times 10^{38}\ \mathrm{erg\ s^{-1}} \left({M\over M_\odot}\right) \approx 3\times 10^4\ L_\odot\ \left({M\over M_\odot}\right).
+\]</div>
+<p>In fact, you see this even in the HR diagram for stars: giant stars have luminosities that extend up to <span class="math notranslate nohighlight">\(\sim 10^6\ L_\odot\)</span> but no more. Compact objects can easily reach <span class="math notranslate nohighlight">\(L_\mathrm{Edd}\)</span> if they are accreting, e.g.~from a companion star in a close binary system, or in AGN where gas accretes onto a supermassive black hole. The accretion luminosity</p>
+<div class="math notranslate nohighlight">
+\[
+L_\mathrm{accr}\approx {GM\over R}\dot M
+\]</div>
+<p>can often reach <span class="math notranslate nohighlight">\(L_\mathrm{Edd}\)</span> in these cases. However, note that even at <span class="math notranslate nohighlight">\(L_\mathrm{Edd}\)</span>, the temperature of a neutron star is <span class="math notranslate nohighlight">\(\approx 2\ {\rm keV}\)</span>, firmly in the X-ray band. We don’t have any hope of making very hard X-rays or gamma-rays in this way.</p>
+</section>
+<section id="optically-thin-source">
+<h3>Optically-thin source<a class="headerlink" href="#optically-thin-source" title="Permalink to this heading">#</a></h3>
+<p>This shows that thermal processes are limited in the photon energies that they can produce. We can do a little better if we think about optically-thin gas rather than optically-thick. In optically-thin gas, radiated photons mostly leave without further interaction with the plasma. Instead of the thermal equilibrium Planck or blackbody spectrum, in this case the emission has a Bremsstrahlung spectrum with photon energies that extend up to <span class="math notranslate nohighlight">\(E_\gamma\sim k_BT\)</span> where <span class="math notranslate nohighlight">\(T\)</span> is the temperature of the gas. An important example of optically-thin thermal emission is X-ray emission from galaxy clusters. The baryonic mass of galaxy clusters is dominated by hot gas that sits in the dark matter potential with temperature</p>
+<div class="math notranslate nohighlight">
+\[
+k_BT \approx {GM m_p\over R}.
+\]</div>
+<p>Taking typical values <span class="math notranslate nohighlight">\(M\sim 10^{14}\ M_\odot\)</span> and <span class="math notranslate nohighlight">\(R\sim \mathrm{Mpc}\approx 3\times 10^{24}\ \mathrm{cm}\)</span> gives a temperature <span class="math notranslate nohighlight">\(T\approx 5\times 10^7\ {\rm K}\approx 5\ {\rm keV}\)</span>. This is the same order of magnitude as the temperature at the centre of the Sun, but with the crucial difference that the object is optically-thin so these photons can leave, whereas the Sun is extremely optically thick at its centre and the photons are re-absorbed.</p>
+<p>Another example is accretion onto white dwarfs in compact binaries (“cataclysmic variables”). At some accretion rates, the boundary layer where inflowing matter transitions from the accretion disk to the star is optically thin; the temperature of the plasma is <span class="math notranslate nohighlight">\(k_BT\sim  m_pGM/R\sim 100\ {\rm keV}\)</span> giving rise to hard X-ray emission.</p>
+</section>
+<section id="the-limits-of-thermal-emission">
+<h3>The limits of thermal emission<a class="headerlink" href="#the-limits-of-thermal-emission" title="Permalink to this heading">#</a></h3>
+<p>We see that thermal emission from hot plasma can generate X-rays in a number of different scenarios. However, it is difficult to go much beyond hard X-rays <span class="math notranslate nohighlight">\(\sim 100\ {\rm keV}\)</span> (<span class="math notranslate nohighlight">\(T\sim 10^9\ {\rm K}\)</span>). Note that at high energies, thermal spectra fall off <span class="math notranslate nohighlight">\(\propto e^{-h\nu/k_BT}\)</span>, so very few photons are emitted at energies substantially above <span class="math notranslate nohighlight">\(k_BT\)</span>. At low frequencies, thermal emission falls off as <span class="math notranslate nohighlight">\(\propto \nu^2\)</span> (Rayleigh-Jeans limit), and so in the radio in particular non-thermal processes are needed to explain observed sources.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Even taking the coldest astrophysical blackbody spectrum we could think of, the CMB with <span class="math notranslate nohighlight">\(T\approx 3\ {\rm K}\)</span>, radio waves are long wavelength compared to the peak, which is around a wavelength of 1 mm for the CMB.</p>
+</div>
+</section>
+</section>
+<section id="energy-scales-how-to-get-to-higher-photon-energies">
+<h2>Energy scales; how to get to higher photon energies<a class="headerlink" href="#energy-scales-how-to-get-to-higher-photon-energies" title="Permalink to this heading">#</a></h2>
+<p>To explain gamma-rays, we clearly need to go to non-thermal processes. To try to understand how we could generate photons with gamma-ray energies, let’s think about different energy scales. We’ll see that neutrinos are also a natural consequence of going to higher energies.</p>
+<section id="atomic-energy-scale">
+<h3>Atomic energy scale<a class="headerlink" href="#atomic-energy-scale" title="Permalink to this heading">#</a></h3>
+<p>The binding energy of H-like atoms is <span class="math notranslate nohighlight">\(13.6\ {\rm eV}\ Z^2\)</span> where <span class="math notranslate nohighlight">\(Z\)</span> is the charge of the nucleus (number of protons). For iron (<span class="math notranslate nohighlight">\(Z=26\)</span>) this is <span class="math notranslate nohighlight">\(9.2\ {\rm keV}\)</span> which is in the X-ray range. Indeed, an important emission line is Fe K<span class="math notranslate nohighlight">\(\alpha\)</span>, in which an electron moves from the 2s to 1s shells. The transition energy is <span class="math notranslate nohighlight">\(\approx (3/4) (13.6\ {\rm eV})(Z-1)^2\)</span> (Moseley’s law) or <span class="math notranslate nohighlight">\(\approx 6.4\ {\rm keV}\)</span> for iron. The shape of this spectral line from black hole accretion disks is used to constrain the black hole spin.</p>
+</section>
+<section id="nuclear-energy-scale-gamma-rays-and-neutrinos">
+<h3>Nuclear energy scale: gamma-rays and neutrinos<a class="headerlink" href="#nuclear-energy-scale-gamma-rays-and-neutrinos" title="Permalink to this heading">#</a></h3>
+<p>To get to an energy scale corresponding to gamma-ray photons, we must go beyond the atomic scale to nuclear. The scale of nuclear energies is of order MeV and therefore we would expect transitions between internal levels in a nucleus or nuclear reactions will lead to gamma-ray emission.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may have seen the plot of nuclear binding energy for different elements (e.g.~<a class="reference external" href="https://en.wikipedia.org/wiki/Nuclear_binding_energy#/media/File:Binding_energy_curve_-_common_isotopes.svg">this version on wikipedia</a>). This shows that the binding energy difference between He and H is <span class="math notranslate nohighlight">\(\approx 7\ {\rm MeV}\)</span> per nucleon (this energy is released in H burning in the Sun). Burning He to carbon gives another <span class="math notranslate nohighlight">\(0.6\ \mathrm{MeV}\)</span> per nucleon, and then a further <span class="math notranslate nohighlight">\(\approx 1\ {\rm MeV}\)</span> per nucleon to the iron group elements. Heavier nuclei are less bound per nucleon compared to iron by an increasing amount as mass increases, up to of order <span class="math notranslate nohighlight">\(\sim 1\ {\rm MeV}\)</span>. This is why nuclear fission releases energy, as nuclei break apart to form smaller nuclei that are closer to the iron peak and therefore more bound.</p>
+</div>
+<p>Nuclear reactions are usually happening in very optically-thick environments, so these photons are absorbed by the gas and we don’t get to see them. However, many nuclear reactions generate neutrinos that can escape. Solar neutrinos are generated by reactions involved in H burning that convert neutrons to protons inside the nucleus or vice versa (involving weak processes and therefore producing neutrinos or anti-neutrinos).</p>
+</section>
+<section id="rest-mass">
+<h3>Rest mass<a class="headerlink" href="#rest-mass" title="Permalink to this heading">#</a></h3>
+<p>You might imagine that the most efficient means of producing high energy photons would be to use the rest mass of particles. For example, in situations where positrons are produced, they can annihilate with electrons, giving photons with <span class="math notranslate nohighlight">\(E_\gamma\approx m_ec^2=0.511\ {\rm MeV}\)</span> (this annhilation line has been detected for example in INTEGRAL observations of the Galactic centre). Another example is pion decay, eg. <span class="math notranslate nohighlight">\(\pi^+\rightarrow \mu^+ + \nu_\mu\)</span>, with a scale <span class="math notranslate nohighlight">\(m_\pi\approx 140\ {\rm MeV}\)</span>.  It is worth noting that accretion onto neutron stars and black holes reaches close to the efficiency of rest mass conversion, i.e. <span class="math notranslate nohighlight">\(GM/Rc^2\gtrsim 0.1\)</span> for these compact objects, so that <span class="math notranslate nohighlight">\(L_\mathrm{accr}\gtrsim 0.1 \dot{M} c^2\)</span> (as we saw earlier, the neutron star has <span class="math notranslate nohighlight">\(GMm_p/R\approx 200\ {\rm MeV}\)</span> compared to <span class="math notranslate nohighlight">\(m_pc^2\approx 1\ {\rm GeV}\)</span>).</p>
+</section>
+<section id="the-fermi-energy-in-white-dwarf-and-neutron-star-interiors">
+<h3>The Fermi energy in white dwarf and neutron star interiors<a class="headerlink" href="#the-fermi-energy-in-white-dwarf-and-neutron-star-interiors" title="Permalink to this heading">#</a></h3>
+<p>White dwarfs and neutron stars are degenerate stars, so the particle energy is set by the Fermi energy which is <span class="math notranslate nohighlight">\(\gg k_BT\)</span>. Assuming <span class="math notranslate nohighlight">\(E_F=p_F^2/2m_e\)</span> <span class="math notranslate nohighlight">\(=(\hbar k_F)^2/2m_e\)</span> and <span class="math notranslate nohighlight">\(k_F=(3\pi^2 n_e)^{1/3}\)</span>, we find <span class="math notranslate nohighlight">\(E_F=0.26\ {\rm MeV} (\rho_6Y_e)^{2/3}\)</span> (low mass white dwarf conditions) or <span class="math notranslate nohighlight">\(26\ {\rm MeV} (\rho_9Y_e)^{2/3}\)</span> (high mass white dwarf, neutron star envelope). Here, <span class="math notranslate nohighlight">\(Y_e\)</span> is the number of electrons per baryon. With such large Fermi energies inside neutron stars, rising to <span class="math notranslate nohighlight">\(\sim 200\ {\rm MeV}\)</span> in the interior, nuclear transformations can occur and even the production of “exotic” particles in neutron star cores. High energy physics is crucial to understand what is happening in these dense environments. Young neutron stars cool primarily by emitting neutrinos as nuclear reactions occur in the neutron star core.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The value of Fermi energy we got for neutron star envelope densities is much larger than the electron rest mass, so we should really use the relativistic formula <span class="math notranslate nohighlight">\(E_F=p_F c\)</span> to calculate the Fermi energy. Try it! How does Fermi energy scale with density once the electrons become relativistic?</p>
+</div>
+</section>
+<section id="relativistic-boosting-inverse-compton-scattering">
+<h3>Relativistic boosting, inverse Compton scattering<a class="headerlink" href="#relativistic-boosting-inverse-compton-scattering" title="Permalink to this heading">#</a></h3>
+<p>Relativity is key to making photons with even higher energies. For example, a photon scattering from a fast moving electron increases its energy by a factor <span class="math notranslate nohighlight">\(\sim \gamma^2\)</span> (where <span class="math notranslate nohighlight">\(\gamma^2=1/(1-\beta^2)\)</span>; <span class="math notranslate nohighlight">\(\beta=v_e/c\)</span>) (inverse Compton or IC scattering). Consider a relativistic jet launched from an accreting black hole in which the Lorentz factor is <span class="math notranslate nohighlight">\(\gamma\sim 1000\)</span>. If we want to make X-ray photons with energy <span class="math notranslate nohighlight">\(\approx \)</span>keV, the seed photons need only have energies of <span class="math notranslate nohighlight">\(10^{-3}\ {\rm eV}\)</span> which corresponds to <span class="math notranslate nohighlight">\(\lambda\approx 0.1\ {\rm cm}\)</span> (far infrared). With seed photons in the optical (e.g. from the accretion disk), the energy is boosted from <span class="math notranslate nohighlight">\(\sim 1\ {\rm eV}\)</span> to <span class="math notranslate nohighlight">\(\sim 1\ {\rm MeV}\)</span> (gamma rays). IC scattering of a 10 keV X-ray photon would boost the photon energy to 10 GeV!</p>
+<p>Relativistic boosting of energies is key to making gamma-rays. The highest energy photon that has been detected has <span class="math notranslate nohighlight">\(E_\gamma&gt;100\ {\rm TeV}=10^{14}\ {\rm eV}\)</span> from the Crab nebula (Amenomori et al. 2019; Tibet air shower array). A possible source of these photons is scattering of CMB photons (3K; <span class="math notranslate nohighlight">\(3\times 10^{-4}\ {\rm eV}\)</span>) by PeV electrons (1 PeV<span class="math notranslate nohighlight">\(=10^{15}\ {\rm eV}\)</span>, <span class="math notranslate nohighlight">\(\gamma\sim 10^9\)</span>) accelerated at shock fronts in the nebula. Relativity also sets the photon energy in synchrotron radiation, which involves Lorentz boosted and beamed radiation from electrons spiralling in a magnetic field; the characteristic frequency is <span class="math notranslate nohighlight">\(\omega\sim \gamma^2 (eB/m_e c)\)</span> as we’ll see more of later.</p>
+<p>The key thing is then to understand particle acceleration – what sets the distribution of particle energies as a function of <span class="math notranslate nohighlight">\(\gamma\)</span>? Non-thermal radiation like this from Compton scattering or synchrotron is an important source of high energy photons. It also leaves a signature at low photon energies. Synchrotron emission is a common source of radio emission. As we noted earlier, many radio sources have brightness temperatures much larger than the plasma temperature; thermal radiation is not an efficient radio source. We need high energy astrophysics to understand even low energy photons!</p>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>Hopefully this discussion motivates some of the topics that we’ll cover in the course, specifically:</p>
+<ul class="simple">
+<li><p>How are particles accelerated in astrophysical environments and what does their energy spectrum look like?</p></li>
+<li><p>How do non-thermal particles radiate and how can we distinguish observationally between different radiation mechanisms such as inverse-Compton scattering or synchrotron?</p></li>
+<li><p>How do we make binary systems in which compact objects accrete from a companion star, and related is the question of how do we make compact object binaries that can merge and produce gravitational waves?</p></li>
+</ul>
+<p>We’ll start next week by looking in more detail at what different forms of EM radiation as well as neutrinos and GWs should look like.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Exercises in High Energy Astrophysics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="radiation_notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Electromagnetic radiation mechanisms</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-high-energy-astrophysics-and-why-is-it-interesting">What is High Energy Astrophysics and why is it interesting?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thermal-emission-as-a-source-of-high-energy-photons">Thermal emission as a source of high energy photons</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optically-thick-source">Optically-thick source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eddington-luminosity">Eddington luminosity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optically-thin-source">Optically-thin source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-limits-of-thermal-emission">The limits of thermal emission</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy-scales-how-to-get-to-higher-photon-energies">Energy scales; how to get to higher photon energies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-energy-scale">Atomic energy scale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nuclear-energy-scale-gamma-rays-and-neutrinos">Nuclear energy scale: gamma-rays and neutrinos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-mass">Rest mass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fermi-energy-in-white-dwarf-and-neutron-star-interiors">The Fermi energy in white dwarf and neutron star interiors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relativistic-boosting-inverse-compton-scattering">Relativistic boosting, inverse Compton scattering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andrew Cumming
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
