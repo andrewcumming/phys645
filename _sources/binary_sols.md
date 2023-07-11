@@ -127,7 +127,7 @@ $$
 $$
 
 $(M_2=M_c+M_\mathrm{env})$
-For realistic values of $\lambda$, you can look at \href{https://ui.adsabs.harvard.edu/abs/2000A\ 26A...360.1043D/abstract}{Dewi et al.~2000}. Rearranging this gives
+For realistic values of $\lambda$, you can look at [Dewi et al. (2000)](https://ui.adsabs.harvard.edu/abs/2000A%26A...360.1043D/abstract). Rearranging this gives
 
 $$
 {a_f\over a_i} = {M_c\over M_2} \left[1 + {2\over \eta\lambda}{a_i\over R_2}{M_\mathrm{env}\over M_1}   \right]^{-1}.
@@ -202,7 +202,7 @@ $$
 
 We see that ejecting half the mass also corresponds to $e\rightarrow 1$, further indicating that the orbit becomes unbound. (Physically what is happening here is related to the fact that a circular orbit has a specific ratio of energy to angular momentum -- the lowest energy orbit for a given angular momentum is a circular orbit. After the supernova, this ratio is changed and the orbit is eccentric).
 
-(3) This part was worked out by \href{https://ui.adsabs.harvard.edu/abs/1983ApJ...267..322H/abstract}{Hills 1983}. If we write the relative velocity after the explosion explicitly in the kinetic energy term in the formula for the total energy from part (1),  we get (cancelling out factors of $GM_2(M_1-\Delta M)$)
+(3) This part was worked out by [Hills (1983)](https://ui.adsabs.harvard.edu/abs/1983ApJ...267..322H/abstract). If we write the relative velocity after the explosion explicitly in the kinetic energy term in the formula for the total energy from part (1),  we get (cancelling out factors of $GM_2(M_1-\Delta M)$)
 
 $$
 -{1\over a_i} + {1\over G(M_\mathrm{tot}-\Delta M)}\cdot {1\over 2}V_\mathrm{rel}^2 = -{1\over 2a_f}.
