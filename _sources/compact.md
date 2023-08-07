@@ -64,7 +64,7 @@ where $a$ is the mean separation between ions given by $(4\pi/3) n_i a^3 =1$ and
 
 (a) Imagine perturbing one of the ions from its equilibrium position in the lattice by an amount $\delta r\ll a$. Estimate the restoring force it will feel from the Coulomb repulsion of its nearest neighbours, and therefore the spring constant. Next, assuming thermal equilibrium so that degrees of freedom get $(1/2)k_BT$ of energy, estimate the mean-square displacement of the ion about its equilibrium position as a function of temperature.
 
-(b) {\em Lindemann's criterion} is an [empircal rule](https://en.wikipedia.org/wiki/Melting_point#Predicting_the_melting_point_of_substances_(Lindemann's_criterion)) for when a solid melts which is that the solid will melt when $\langle (\delta r)^2\rangle\sim c^2a^2$ with $c\approx 0.15$--$0.3$. Use this to estimate the value of $\Gamma_m$. Molecular dynamics simulations of these kinds of plasmas give $\Gamma_m\approx 175$. How does your answer compare? 
+(b) **Lindemann's criterion** is an [empirical rule](https://en.wikipedia.org/wiki/Melting_point#Predicting_the_melting_point_of_substances_(Lindemann's_criterion)) for when a solid melts which is that the solid will melt when $\langle (\delta r)^2\rangle\sim c^2a^2$ with $c\approx 0.15$--$0.3$. Use this to estimate the value of $\Gamma_m$. Molecular dynamics simulations of these kinds of plasmas give $\Gamma_m\approx 175$. How does your answer compare? 
 
 (c) Using the more accurate value for $\Gamma_m\approx 175$, calculate the melting temperature as a function of density, $Z$, and $A$. Make a plot showing the melting curve in the $\rho$--$T$ plane for different nuclei $(Z,A)$. Apply your formula to white dwarfs and neutron star envelopes. Do we expect to find solid plasmas in nature? Are white dwarfs gas, liquid, or solid inside?
 
@@ -75,7 +75,7 @@ The degenerate electrons inside white dwarfs are excellent conductors of heat, s
 The rate at which the white dwarf cools is set by the surface luminosity 
 
 $$
-L = 4\pi R^2 \sigma T_s^4,
+L = 4\pi R^2 \sigma T_s^4,\hspace{2cm} (*)
 $$
 
 where $T_s$ is the surface temperature. If we knew how the surface temperature depended on the core temperature $T_s(T_c)$, we could then calculate the cooling rate 
@@ -92,7 +92,7 @@ $$
 L = -4\pi R^2 {4acT^3\over 3\kappa\rho}{dT\over dr},
 $$
 
-where $\kappa$ is the radiative opacity. Replace $L$ with $T_s$ using equation (\ref{eq:L}), assuming an opacity of the form $\kappa=\kappa_0 \rho T^{-7/2}$, ideal gas $P=\rho k_BT/\mu m_p$, and using hydrostatic balance $dP/dr=-\rho g$ to change variables from $r$ to $P$ (in this thin surface layer $g=GM/R^2$ is a constant), integrate this equation and show that $T_s$ and $T_c$ are related by
+where $\kappa$ is the radiative opacity. Replace $L$ with $T_s$ using equation (*), assuming an opacity of the form $\kappa=\kappa_0 \rho T^{-7/2}$, ideal gas $P=\rho k_BT/\mu m_p$, and using hydrostatic balance $dP/dr=-\rho g$ to change variables from $r$ to $P$ (in this thin surface layer $g=GM/R^2$ is a constant), integrate this equation and show that $T_s$ and $T_c$ are related by
 
 $$
 T_s^4\approx {64\over 51} {gk_B\over \kappa_0\mu m_p}{T_c^{17/2}\over P_b^2} ,
